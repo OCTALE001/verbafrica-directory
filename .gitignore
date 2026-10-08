@@ -1,0 +1,28 @@
+# GitHub Pages publishes EVERYTHING committed to main at www.verbafrica.co.za.
+# Anything listed here stays on your machine only.
+
+# Internal docs & personal information (POPIA) — never publish
+Cohort/
+memory/
+Operations/
+Strategy/
+Journey/
+verbAfrica Research/
+*.ics
+
+# Tooling / OS clutter
+.claude/
+.DS_Store
+
+# Raw/unused photo uploads (only the referenced, numbered images are published)
+images/* *
+images/Zolelo*
+images/Keeme*
+images/JustJabba-*
+images/GVNT.PNG
+images/380x380cc.webp
+images/Shivolski-103.JPG
+images/kfresh.webp
+
+# Claude Code handoff notes
+CLAUDE.md

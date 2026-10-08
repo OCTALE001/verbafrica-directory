@@ -1,0 +1,1246 @@
+[
+  {
+    "id": 0,
+    "name": "Chef Nqobi",
+    "image": "images/Chef_Nqobi.JPG",
+    "imagePos": "center 19%",
+    "role": "Culinary Artist / Food Filmmaker / Content Creator",
+    "location": "Johannesburg",
+    "genres": [
+      "Food Content",
+      "Culinary Arts",
+      "Food Filmmaking",
+      "Event Curation"
+    ],
+    "filters": [
+      "content"
+    ],
+    "minRate": 0,
+    "rateLabel": "POA",
+    "bio": "Chef Nqobi (Nqobile Kwame Nkabinde) is a Johannesburg-based culinary artist, filmmaker, and creative director. Blending food, music, and storytelling, he creates immersive dining experiences, live culinary demonstrations, and branded creative productions. With experience in luxury hospitality, private dining, and experiential events, his work bridges culinary excellence with culture, art, and community.",
+    "highlights": [
+      "Featured Chef, Decorex Johannesburg 2025 Live Cooking Demonstrations",
+      "Collaborated with Samsung, Moremi Kitchens, @Home, Mr D, Jack Black, and Red Bull",
+      "3-year culinary internship under ANEW Hotels & Resorts",
+      "Curated the experimental dining experience for Borwa during Design Week 2024"
+    ],
+    "notable": [
+      "Worked across five ANEW Hotels & Resorts (2021-2023) and Marriott Hotel Loftus, Pretoria",
+      "Co-Founder & Head of Culinary, Melodies and Munchies (Pty) Ltd",
+      "Culinary Director & Executive Producer, TastyTing",
+      "Executive Producer, Taste The Beat"
+    ],
+    "rates": [
+      {
+        "label": "Culinary / Content / Event Curation",
+        "price": "POA"
+      }
+    ],
+    "contact": {
+      "instagram": "@chefnqobi"
+    },
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 10,
+    "name": "Just Jabba",
+    "image": "images/11-just-jabba.jpg",
+    "imagePos": "center 43%",
+    "role": "Recording Artist / Event Curator / Creative Entrepreneur",
+    "location": "Johannesburg (East Rand)",
+    "genres": [
+      "Hip-Hop",
+      "Kwaito",
+      "Jazz"
+    ],
+    "filters": [
+      "music"
+    ],
+    "minRate": 0,
+    "rateLabel": "POA",
+    "bio": "Njabulo Mpanza, professionally known as Just Jabba, is a Johannesburg-born recording artist, creative entrepreneur, event curator, cultural strategist, and community builder dedicated to advancing South Africa’s creative economy. As the founder of Wav Impact and Verb Africa, he has built platforms that connect artists, creatives, and opportunities while championing the next generation of cultural leaders.\n\nKnown for blending hip-hop, Kwaito, jazz, and township storytelling, Just Jabba has spent nearly a decade crafting music that reflects both contemporary South African culture and global influences. Beyond his work as an artist, he is a respected event curator, project manager, tour manager, creative strategist, and ecosystem builder who has worked across artist development, live experiences, content production, and youth empowerment initiatives.\n\nHolding an Honours Degree in International Relations from the University of the Witwatersrand, his work sits at the intersection of culture, leadership, entrepreneurship, and community development. Whether building platforms, curating stages, managing tours, or performing live, his mission remains the same: creating opportunities, strengthening creative communities, and ensuring African stories are seen, heard, and celebrated.",
+    "highlights": [
+      "Recording artist, event curator, creative strategist, project manager, and cultural entrepreneur available for bookings",
+      "Founder and Director of Wav Impact, a creative development and live events platform supporting emerging talent across South Africa",
+      "Founder of Verb Africa, a platform connecting creatives, artists, and cultural professionals to opportunities and bookings",
+      "350,000+ streams across platforms as Just Jabba",
+      "200,000+ streams as Bougie Pantsula (with Matt Ryan)",
+      "Curated and produced dozens of live events, showcases, workshops, and artist development initiatives",
+      "Tour Manager and Road Manager for national tours, festivals, and live music experiences",
+      "Built and led teams delivering concerts, content campaigns, artist rollouts, and cultural programming",
+      "Apple Music editorial support including A-List South Africa, Mzansi Hits, Mzansi Hip-Hop, and Best of the Week",
+      "Featured by Mail & Guardian, Zkhiphani, Hype Magazine, Ice Cream Magazine, SlikourOnLife, and other leading cultural publications",
+      "Collaborated with and supported numerous artists, creatives, and cultural organisations across South Africa",
+      "Brand partnerships and collaborations including Red Bull Music, Markham, Dickies, Converse, Sprite, and youth culture initiatives",
+      "Fluent in six languages: isiZulu, English, isiXhosa, isiNdebele, Sesotho, and Setswana",
+      "Represented South Africa at international leadership, governance, and cultural forums in Dubai, Bangkok, Istanbul, and New York"
+    ],
+    "notable": [
+      "Key Player",
+      "Suitcase Yama Hit",
+      "96, Infinity (EP)",
+      "Not Too Bad For A Pantsula (EP)",
+      "Look Up (Debut EP)",
+      "Bougie Pantsula Demo Tape",
+      "Founder & Curator, Wav Impact Live Series",
+      "Founder, Verb Africa",
+      "Wav Impact Creative Cohort Programme",
+      "Tour Management, LaCabra “Mr Bully Tour”",
+      "Tour Management, Blue Pappi “Ehlane Tour”",
+      "Creative strategy, artist development, and cultural projects across South Africa"
+    ],
+    "beyond": [
+      "Founder & Director, Wav Impact",
+      "Event Organiser & Curator",
+      "Tour Manager",
+      "Road Manager",
+      "Production Lead",
+      "Creative Strategist",
+      "Content Producer",
+      "Artist Development Consultant",
+      "Social Media & Marketing Consultant",
+      "Community Builder",
+      "Research & Insights Specialist"
+    ],
+    "rates": [
+      {
+        "label": "Performance / Booking / Feature / Hosting / Speaking / Event Curation / Consulting",
+        "price": "POA"
+      }
+    ],
+    "contact": {
+      "instagram": "@justjabba_",
+      "tiktok": "@justjabba_",
+      "youtube": "@justjabba",
+      "spotify": "Just Jabba"
+    },
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 8,
+    "name": "Shivolski",
+    "image": "images/Shivolski-104.JPG",
+    "imagePos": "center 15%",
+    "role": "Host / Dancer / Content Creator / Media Personality",
+    "location": "South Africa",
+    "genres": [
+      "Dance",
+      "Content Creation",
+      "Social Media",
+      "MC"
+    ],
+    "filters": [
+      "mc",
+      "content"
+    ],
+    "minRate": 1000,
+    "rateLabel": "from R1,000",
+    "bio": "Shivolski is a dynamic host, dancer, content creator, media personality, and footballer whose infectious energy has made her a standout presence across youth culture, entertainment, and live events. Rooted in hip hop, Amapiano, and contemporary South African culture, she brings charisma, movement, and crowd engagement to every stage she steps onto. Whether hosting events, leading activations, creating content, or performing as a dancer, Shivolski is known for turning moments into memorable experiences. Available for hosting, brand activations, content creation, appearances, dance performances, sporting engagements, and corporate events.",
+    "highlights": [
+      "Professional host, dancer, content creator, media personality, and footballer available for bookings",
+      "Featured in Capitec and Super C brand campaigns",
+      "Halls OMFCC ambassador campaign participant",
+      "Featured in Global ComLimited football commercial",
+      "Member of the Zama Zama Magazine team, contributing to one of South Africa’s emerging youth culture platforms",
+      "Dance collaborations with leading creators and influencers across South Africa",
+      "Experienced host across festivals, student events, cultural activations, and entertainment platforms",
+      "Strong audience engagement and crowd management skills developed through live event hosting",
+      "Growing digital presence across Instagram and TikTok",
+      "Available for corporate events, festivals, youth activations, sporting events, and brand campaigns"
+    ],
+    "notable": [
+      "Music video appearances including work with Speedsta and Zoocci Coke Dope",
+      "Capitec and Super C campaigns",
+      "Halls OMFCC ambassador campaign",
+      "Global ComLimited football commercial",
+      "Live hosting credits including Hipnotik (Eswatini), Qwelfontein, Wav Impact events, and the Mr Bully Tour",
+      "Dance performances and content collaborations across music, lifestyle, and youth culture platforms",
+      "Zama Zama Magazine contributor and media personality"
+    ],
+    "rates": [
+      {
+        "label": "IG Sponsored Post",
+        "price": "R2,000"
+      },
+      {
+        "label": "IG Sponsored Reel",
+        "price": "R2,500"
+      },
+      {
+        "label": "TikTok Sponsored Video",
+        "price": "R2,500"
+      },
+      {
+        "label": "3x TikTok Videos",
+        "price": "R3,000"
+      },
+      {
+        "label": "IG Story",
+        "price": "R1,000"
+      },
+      {
+        "label": "Featuring in Video",
+        "price": "R1,000"
+      }
+    ],
+    "contact": {
+      "instagram": "@shivolski"
+    },
+    "verified": true,
+    "isNew": false
+  },
+  {
+    "id": 1,
+    "name": "DG-TAL Format",
+    "image": "images/DG.jpg",
+    "imagePos": "center top",
+    "role": "Post Production Company",
+    "location": "South Africa",
+    "genres": [
+      "Post Production",
+      "Motion Graphics",
+      "Graphic Design",
+      "2D/3D Animation",
+      "DIT"
+    ],
+    "filters": [
+      "post-production",
+      "content"
+    ],
+    "minRate": 1000,
+    "rateLabel": "from R1,000",
+    "bio": "One-stop creative hub for all post-production: DIT, Data Wrangling, Offline & Online Editing, Motion Graphics, Graphic Design and final delivery. Clients include Netflix, Showmax, MultiChoice, SABC, Standard Bank, UNICEF, Ballantine's. \"DG-TAL Format is Art.\"",
+    "highlights": [
+      "Netflix SAFTA award: 'The Letter Reader' (2019)",
+      "Netflix/Showmax: Love Lives Here, Baby Mamas 2, Mother The Law, Mother To Mother",
+      "MultiChoice: Korobela, Wangthembisa, Somathekisi, uShuni Womhlaba",
+      "Clients: SABC, Standard Bank, UNICEF, Ballantine's, Prime Video, Telkom, Gallo Music Publishers, Ukhozi FM, Niki's Jazz Restaurant, Tape Gang",
+      "Tools: Adobe Suite, DaVinci Resolve, Blender, Cinema 4D, NukeX"
+    ],
+    "notable": [
+      "The Letter Reader (Netflix/SAFTA)",
+      "Love Lives Here (Showmax)",
+      "Baby Mamas 2 (2024)",
+      "Wangthembisa (MultiChoice)",
+      "Daily Thetha (SABC 1, 2020-Present)"
+    ],
+    "rates": [
+      {
+        "label": "Long Format (offline, online, grade, subs, mix)",
+        "price": "from R35,000"
+      },
+      {
+        "label": "Short Format",
+        "price": "from R15,000"
+      },
+      {
+        "label": "Offline & Online Editing",
+        "price": "from R9,000"
+      },
+      {
+        "label": "GFX / Motion Graphics / Animation",
+        "price": "from R15,000"
+      },
+      {
+        "label": "Event Poster Design",
+        "price": "R1,000 to R2,500"
+      },
+      {
+        "label": "Logo Design",
+        "price": "R1,000 to R2,500"
+      },
+      {
+        "label": "DIT / Data Wrangling",
+        "price": "R3,000/day"
+      },
+      {
+        "label": "Film Poster Design",
+        "price": "POA"
+      }
+    ],
+    "contact": {
+      "instagram": "@dg_tal.jpeg"
+    },
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 2,
+    "name": "Fifi Frequency",
+    "image": "images/Fifi01.JPG",
+    "imagePos": "center 25%",
+    "role": "Broadcaster / Event Host / DJ / Content Creator",
+    "location": "Johannesburg",
+    "genres": [
+      "MC",
+      "Radio",
+      "DJ",
+      "Voice-over",
+      "Content"
+    ],
+    "filters": [
+      "mc",
+      "dj",
+      "content"
+    ],
+    "minRate": 1300,
+    "rateLabel": "from R1,300",
+    "bio": "Refilwe Katong, professionally known as Fifi Frequency, is a broadcaster, radio personality, event host, DJ, content creator, and media professional whose passion for youth culture, music, and storytelling has made her a respected voice in South African entertainment. With years of experience across radio, digital media, live events, and content production, she seamlessly blends on-air talent with behind-the-scenes creative execution.\n\nKnown for her infectious energy, professionalism, and ability to connect with audiences, Fifi Frequency has become a familiar face and voice within the YFM ecosystem, contributing both as a presenter and as part of the station’s digital content team. Available for event hosting, radio and media engagements, DJ bookings, brand activations, content creation, voice-over work, and corporate events.",
+    "highlights": [
+      "Radio host, media personality, DJ, MC, voice-over artist, and content creator available for bookings",
+      "YFM presenter and digital content producer",
+      "Member of YFM’s digital content team, creating and producing content for one of South Africa’s leading youth radio brands",
+      "Selected for DJ Speedsta’s DJ Academy, further developing her skills as a professional DJ and live performer",
+      "Experienced event host and MC across entertainment, lifestyle, corporate, and youth-focused events",
+      "Host of #ThePlaygroundOnY and #NightsLikeThis on YFM",
+      "Former host of The Urban Brunch and UJFM Top 30 on UJFM",
+      "Liberty Radio Award nomination through #UJFMTop30",
+      "Hosted major events including MusicEx 2024 and Mr & Miss UJ 2024",
+      "Shared stages with Zakes Bantwini, Kamo Mphela, DJ Zinhle, and other leading South African entertainers",
+      "Engaged with and interviewed a wide range of artists, creatives, and cultural figures including Kwesta, Venom, Anele Zondo, and more",
+      "Experienced across broadcasting, digital content production, live hosting, brand activations, and audience engagement"
+    ],
+    "notable": [
+      "YFM, Presenter and Digital Content Producer",
+      "#ThePlaygroundOnY",
+      "#NightsLikeThis",
+      "The Urban Brunch (UJFM)",
+      "UJFM Top 30 (Liberty Radio Award nominated)",
+      "MusicEx 2024 Host",
+      "Mr & Miss UJ 2024 Host",
+      "DJ Speedsta’s DJ Academy participant",
+      "Digital content creation and media production for YFM platforms and campaigns"
+    ],
+    "rates": [
+      {
+        "label": "MCing (2hrs)",
+        "price": "R3,000"
+      },
+      {
+        "label": "Voice-over (60sec)",
+        "price": "R2,800"
+      },
+      {
+        "label": "Digital Content (3hrs)",
+        "price": "R1,300"
+      }
+    ],
+    "contact": {
+      "instagram": "@fifi_frequency"
+    },
+    "verified": true,
+    "isNew": false
+  },
+  {
+    "id": 3,
+    "name": "Hāzy",
+    "image": "images/Hazy01.JPG",
+    "imagePos": "center top",
+    "role": "Musician / Audio Engineer / Music Producer",
+    "location": "South Africa",
+    "genres": [
+      "Live Performance",
+      "Audio Engineering",
+      "Mixing",
+      "Mastering",
+      "Post Production"
+    ],
+    "filters": [
+      "music",
+      "post-production"
+    ],
+    "minRate": 500,
+    "rateLabel": "from R500",
+    "bio": "Versatile musician, recording artist and audio engineer offering end-to-end music and live event services. Available for live performances, event sound engineering, recording, mixing, mastering, podcasts, voiceovers, and post-production. Multi-booking discounts available. iTunes Master badge service offered.",
+    "highlights": [
+      "Recording artist available for live bookings and performances",
+      "Event sound engineering and live audio support",
+      "30% off 5+ demo recordings",
+      "40% off 5+ final mixes",
+      "iTunes Master badge service",
+      "Up to 4 revisions per mix & master",
+      "Non-refundable 50% deposit to secure bookings"
+    ],
+    "notable": [
+      "Independent recording artist with multiple commercial releases across streaming platforms",
+      "Sound engineering for live events and performances",
+      "Post-production services across music, podcasts, and voiceovers",
+      "Recording, mixing, and mastering for independent artists and creative projects"
+    ],
+    "rates": [
+      {
+        "label": "Music Recording / demo",
+        "price": "R700"
+      },
+      {
+        "label": "Final Mix / demo",
+        "price": "R1,200"
+      },
+      {
+        "label": "Stereo Mastering / mix",
+        "price": "R600"
+      },
+      {
+        "label": "Stem Master / mix",
+        "price": "R900"
+      },
+      {
+        "label": "iTunes Master / mix",
+        "price": "R1,200"
+      },
+      {
+        "label": "Podcast Recording (30min)",
+        "price": "R1,200"
+      },
+      {
+        "label": "Podcast Final Mix (30min)",
+        "price": "R1,800"
+      },
+      {
+        "label": "Voiceover / min",
+        "price": "R500"
+      }
+    ],
+    "contact": {
+      "instagram": "@HAZYHAZY_SA"
+    },
+    "verified": true,
+    "isNew": false
+  },
+  {
+    "id": 4,
+    "name": "Kgaldrogo",
+    "image": "images/Kgale.JPG",
+    "imagePos": "55% 46%",
+    "role": "Rapper / Guitarist / Event Host / Hype Man",
+    "location": "East Rand, Johannesburg",
+    "genres": [
+      "Hip-Hop",
+      "RnB",
+      "Rap"
+    ],
+    "filters": [
+      "music"
+    ],
+    "minRate": 0,
+    "rateLabel": "POA",
+    "bio": "Born Mokgale Puwane, Kgaldrogo is the “Rap-Guitarist of the East”, a multi-faceted creative whose signature sound blends R&B, hip-hop, and ghetto linguistics, delivered through dynamic live guitar performances. Beyond music, he is a professional mobile barber, event host, and certified hype man, bringing energy and personality to stages, events, and audiences across South Africa. Founder of Kgalibarber, a platform dedicated to industry grooming and music culture.",
+    "highlights": [
+      "Recording artist, live performer, guitarist, host, and certified hype man available for bookings",
+      "Professional mobile barber serving clients across the entertainment and creative industries",
+      "Groomed notable industry figures including Lula Odiba, Makwa, and Njelic",
+      "Hosted independent live events and performed on multiple stages and festival platforms",
+      "5 EPs plus production and songwriting credits",
+      "100K+ streams across platforms (55K+ Apple Music)",
+      "Radio support notably from YFM, 5FM, VOW FM, Tuks FM & Welkom FM",
+      "Music videos featured on MTV Base, Trace TV, and Trace Africa",
+      "Performance credits include Joburg Theatre, YFM Lyfe Fest, Rand Show, and The Wave",
+      "Collaborated with Fifi Cooper, Just Jabba, Seru The Ellipsis, LaCabra, Lowfeye, Blue Pappi, etc"
+    ],
+    "notable": [
+      "Mona Lisa ft. Sni Mhlongo, 11K+ streams, featured on Trace TV, Trace Africa, and MTV Base, with 390+ Shazams",
+      "Multiple independent releases across major streaming platforms",
+      "Founder of Kgalibarber, merging grooming, culture, and music through community-focused creative initiatives"
+    ],
+    "rates": [
+      {
+        "label": "Performance / Feature",
+        "price": "POA"
+      }
+    ],
+    "contact": {
+      "instagram": "@kgaldrogo"
+    },
+    "verified": true,
+    "isNew": false
+  },
+  {
+    "id": 5,
+    "name": "LuMai",
+    "image": "images/LuMai.JPG",
+    "imagePos": "32% 1%",
+    "role": "Singer-Songwriter / Actress / Model / Media Personality",
+    "location": "South Africa",
+    "genres": [
+      "R&B",
+      "Afro-pop",
+      "Soul"
+    ],
+    "filters": [
+      "music",
+      "content"
+    ],
+    "minRate": 0,
+    "rateLabel": "POA",
+    "bio": "LuMai is a KwaZulu-Natal-born singer-songwriter, actress, model, and media personality whose vibrant presence has made her one of the most versatile emerging creatives in South Africa. Known for her soulful vocals, captivating stage presence, and ability to move seamlessly between music, fashion, television, and live events, LuMai brings both professionalism and personality to every platform she steps onto. Available for live performances, corporate events, brand activations, hosting opportunities, fashion campaigns, and creative collaborations.",
+    "highlights": [
+      "Singer-songwriter, actress, model, and media personality available for bookings",
+      "Experienced performer across live music, corporate events, brand activations, and private functions",
+      "Performed on multiple stages across Johannesburg and Durban",
+      "Worked with acclaimed artists and creatives including AudioMarc, The Qwellers, Sjava, and Lunatik",
+      "Multi-disciplinary creative with experience across music, fashion, acting, and entertainment",
+      "Known for her vibrant energy, engaging personality, and dynamic live performances",
+      "Active recording artist with releases across major streaming platforms",
+      "Available for brand partnerships, campaigns, appearances, and corporate engagements"
+    ],
+    "notable": [
+      "Collaborations and creative work alongside AudioMarc, The Qwellers, Sjava, and Lunatik",
+      "Featured vocalist on collaborative releases spanning Afro-pop, R&B, and contemporary South African sounds",
+      "“Lunatik” (Da$H ft. Sastii & LuMai)",
+      "Live performances at venues, showcases, and events across Johannesburg and Durban",
+      "Fashion, modelling, and acting work across multiple creative platforms"
+    ],
+    "rates": [
+      {
+        "label": "Music Feature / Performance / Modelling",
+        "price": "POA"
+      }
+    ],
+    "contact": {
+      "instagram": "@lumairsa"
+    },
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 6,
+    "name": "Ohteeh",
+    "image": "images/Ohteeh.jpeg",
+    "imagePos": "44% 27%",
+    "role": "Multi-Instrumentalist / Producer / DJ / Musical Director",
+    "location": "South Africa",
+    "genres": [
+      "R&B",
+      "African Soul",
+      "Contemporary"
+    ],
+    "filters": [
+      "music",
+      "dj"
+    ],
+    "minRate": 0,
+    "rateLabel": "POA",
+    "bio": "Ohteeh is a multi-instrumentalist, producer, DJ, musical director, and educator whose musicianship has made him a sought-after collaborator across South Africa’s live music scene. Specialising in keys and drums, he brings technical excellence, creativity, and stage presence to every performance. Whether supporting artists as a session musician, performing as a DJ, leading live arrangements, or teaching the next generation of musicians, Ohteeh delivers a world-class musical experience. Available for live performances, corporate events, artist support, music direction, DJ sets, and educational engagements.",
+    "highlights": [
+      "Multi-instrumentalist specialising in keys and drums",
+      "Available for live performances, artist support, studio sessions, and corporate events",
+      "Experienced musical director, producer, DJ, and music educator",
+      "Music teacher at NSA, one of South Africa’s leading music schools, with over 3 years of teaching experience",
+      "Frequent collaborator with Lebza The Villain and Lunatik",
+      "Member of Radio 3000, a live band available for bookings, festivals, showcases, and corporate events",
+      "Skilled in live arrangements, performance direction, and artist development",
+      "Signed to Velocity Muzik",
+      "Known for dynamic musicianship, versatility, and exceptional live execution"
+    ],
+    "notable": [
+      "Collaborations and live performance work with Lebza The Villain and Lunatik",
+      "Music educator and mentor at NSA",
+      "Musical direction, live instrumentation, and production across multiple creative projects",
+      "Member of Radio 3000, delivering full-band live experiences across diverse event settings",
+      "“Please Mr” (Shekhinah) Live Flip, re-produced and re-arranged",
+      "Active as an artist, producer, DJ, and session musician across South Africa’s music ecosystem"
+    ],
+    "rates": [
+      {
+        "label": "Performance / Booking / DJ Set",
+        "price": "POA"
+      }
+    ],
+    "contact": {
+      "instagram": "@ohteeh"
+    },
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 7,
+    "name": "Seru The Ellipsis",
+    "image": "images/Seru.JPG",
+    "imagePos": "center 35%",
+    "role": "Rapper / Producer / Mixing Engineer / Studio Owner",
+    "location": "Vosloorus, Ekurhuleni",
+    "genres": [
+      "Hip-Hop",
+      "Rap",
+      "Neo-Soul",
+      "Studio Services"
+    ],
+    "filters": [
+      "music",
+      "mc",
+      "post-production"
+    ],
+    "minRate": 0,
+    "rateLabel": "POA",
+    "bio": "Born Serupenyana Pharoe, Seru The Ellipsis is a rapper, producer, mixing engineer, and creative entrepreneur from Vosloorus in Ekurhuleni. Known for his explosive live performances, sharp lyricism, and versatile creative skillset, he has established himself as one of the East Rand’s most respected independent artists. Beyond music, Seru operates an independent recording studio, offering professional recording, mixing, podcast production, and audio services for artists, brands, and creators. Available for live performances, studio work, production, engineering, podcast services, and creative collaborations.",
+    "highlights": [
+      "Recording artist, producer, mixing engineer, and studio owner available for bookings",
+      "Operates an independent studio offering recording, mixing, podcast production, and audio services",
+      "5 mixtapes (Dawn, Rise, Shine, Dusk, Set of Ellipsis) plus debut album Leeto",
+      "Leeto surpassed 100K+ streams within its first month of release",
+      "Viral Red Bull 64 Bars freestyle performance",
+      "Radio support from 5FM, YFM, Metro FM, Lesedi FM, and Umhlobo Wenene FM",
+      "Featured on Daily Thetha (SABC 1), Channel O, SA Hip Hop Mag, SlikourOnLife, and Sportscene platforms",
+      "Hosted independent headline events and showcases",
+      "Performed on major stages including Back to the City Main Stage, Rand Show, Comic Con, and Red Bull platforms",
+      "Shared stages with Cassper Nyovest, Blxckie, LucasRaps, Reason, Robotboi and other leading South African artists",
+      "Collaborated with a wide range of artists, producers, and creatives across the South African music industry",
+      "Brand partnership and campaign experience including work with Axe South Africa"
+    ],
+    "notable": [
+      "Leeto (debut album), 100K+ streams in its first month",
+      "Dawn, Rise, Shine, Dusk, and Set of Ellipsis mixtape series",
+      "Viral Red Bull 64 Bars freestyle",
+      "Red Bull B Con Cypher (2023 & 2024)",
+      "Independent studio services supporting artists, podcasters, and creative projects",
+      "Live performances at Back to the City, Rand Show, Comic Con, and multiple independent music showcases"
+    ],
+    "rates": [
+      {
+        "label": "Performance / Feature",
+        "price": "POA"
+      }
+    ],
+    "contact": {
+      "instagram": "@serutheellipsis"
+    },
+    "verified": true,
+    "isNew": false
+  },
+  {
+    "id": 9,
+    "name": "Zolelo Magwaza",
+    "image": "images/04-zolelo.jpg",
+    "imagePos": "center 8%",
+    "role": "Videographer / Photographer / Editor / Creative Producer",
+    "location": "Johannesburg",
+    "genres": [
+      "Video Production",
+      "Stills Photography",
+      "Graphics & VFX",
+      "Social Media"
+    ],
+    "filters": [
+      "photography",
+      "post-production",
+      "content"
+    ],
+    "minRate": 0,
+    "rateLabel": "POA",
+    "bio": "Zolelo Magwaza (iiam3siixtii) is a multidisciplinary visual storyteller, photographer, videographer, editor, and creative producer known for transforming moments into compelling visual narratives. Born in Durban and shaped in Johannesburg, he has built a reputation for delivering premium visual content across corporate campaigns, television productions, weddings, private celebrations, live events, brand activations, and digital media. From concept to final edit, Zolelo offers a complete visual production service, helping individuals, brands, and organisations tell stories that resonate.",
+    "highlights": [
+      "Professional videographer, photographer, editor, and creative producer available for bookings",
+      "Full-service visual production including shooting, editing, content creation, and post-production",
+      "Experience across corporate campaigns, television, weddings, birthdays, live events, private functions, and brand activations",
+      "750+ projects completed, 5,000+ digital assets created, and 360+ satisfied clients",
+      "Worked with digital agencies, production houses, businesses, and independent creatives",
+      "Featured work on Soweto Blaze (Netflix) and NBA Life Season 2",
+      "Contributor to Brand South Africa’s 30 Years of Democracy campaign",
+      "Videography and production work for SANRAL national road safety campaign",
+      "Skilled across photography, videography, editing, animation, graphic design, and digital storytelling",
+      "Available for corporate events, conferences, campaigns, social content, documentaries, weddings, and commercial productions"
+    ],
+    "notable": [
+      "Soweto Blaze (Netflix)",
+      "NBA Life Season 2 (television talk show)",
+      "Brand South Africa, 30 Years of Democracy campaign",
+      "SANRAL road safety television commercial",
+      "Content and creative collaborations with Play Braam, Banter w Boys, and Kent Gush Properties",
+      "Hundreds of corporate, lifestyle, wedding, event, and commercial productions across South Africa",
+      "Showreel: https://youtu.be/LgcaKO-OBIU"
+    ],
+    "rates": [
+      {
+        "label": "Video Production",
+        "price": "POA"
+      },
+      {
+        "label": "Stills Photography",
+        "price": "POA"
+      },
+      {
+        "label": "Graphics & VFX / Animation",
+        "price": "POA"
+      },
+      {
+        "label": "Social Media Content",
+        "price": "POA"
+      }
+    ],
+    "contact": {
+      "instagram": "@iiam3siixtii",
+      "youtube": "@iiam3siixtii",
+      "linkedin": "zolelo-magwaza-438357156",
+      "portfolio": "https://niaoff-schuorst-raoks.yolasite.com"
+    },
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 11,
+    "name": "GVNT",
+    "image": "images/12-gvnt.jpg",
+    "imagePos": "center 27%",
+    "role": "DJ / Producer / Mixing Engineer",
+    "location": "Johannesburg",
+    "genres": [
+      "Hip-Hop",
+      "Multi-Genre"
+    ],
+    "filters": [
+      "dj",
+      "music",
+      "post-production"
+    ],
+    "minRate": 3500,
+    "rateLabel": "from R3,500",
+    "bio": "GVNT is a South African DJ, producer and mixing engineer known for his versatility, technical ability and deep understanding of music. As lead DJ and one of the core producers behind acclaimed hip-hop collective The Qwellers, he has helped shape their sound. With 30,000+ Spotify listeners and 10 million+ streams across his work, GVNT performs nationwide — Johannesburg, Durban, Cape Town, Gqeberha and the North West — across corporate events, nightlife, private functions and live music experiences. He has worked with brands including SABC, Betway Premiership, Play Energy, Under Armour and Jägermeister.",
+    "highlights": [
+      "Lead DJ and core producer for The Qwellers",
+      "30,000+ Spotify listeners; 10 million+ streams across his work",
+      "DJ, producer and mixing engineer — versatile across multiple genres",
+      "Nationwide performance experience: corporate, commercial, nightlife and private events",
+      "Worked with brands including SABC, Betway Premiership, Play Energy, Under Armour and Jägermeister"
+    ],
+    "notable": [
+      "The Qwellers — Lead DJ, producer and mixing engineer",
+      "SUPA BHEXEZA — The Qwellers",
+      "SS2 — Skatle & GVNT",
+      "EGALINI. — The Qwellers",
+      "Qwelfontein Freestyle — The Qwellers",
+      "ETHEKWINI — Lowfeye ft. Sjava"
+    ],
+    "rates": [
+      {
+        "label": "DJ Set / Booking (varies by event, location, duration & scope)",
+        "price": "from R3,500"
+      },
+      {
+        "label": "Music Production / Mixing & Engineering",
+        "price": "POA"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 12,
+    "name": "Wav Impact",
+    "image": "images/13-wav-impact.jpg",
+    "imagePos": "center 42%",
+    "role": "Events / Creative Direction / Talent Curation",
+    "location": "Johannesburg",
+    "genres": [
+      "Event Curation",
+      "Creative Direction",
+      "Talent Curation"
+    ],
+    "filters": [
+      "events"
+    ],
+    "minRate": 0,
+    "rateLabel": "POA",
+    "bio": "Wav Impact is a South African creative and events platform built around music, culture and community. With 60+ events hosted and produced, it works with artists, brands, venues and organisations to turn ideas into well-curated experiences — combining event strategy, creative direction, talent curation and production. It has built a growing network of artists, DJs, MCs, hosts, musicians, photographers, videographers and producers, and produces its own series including The Wave. Founded by Just Jabba.",
+    "highlights": [
+      "60+ events hosted, curated and/or produced",
+      "Event consultation, creative direction and concept development",
+      "Artist and talent sourcing & curation; live music and performance curation",
+      "Access to a growing network of South African creatives",
+      "Founder-led, artist-focused approach"
+    ],
+    "notable": [
+      "The Wave — flagship live music event series",
+      "Wav Impact Live Sessions — intimate recorded live performances",
+      "Wav Impact Spotlight — artist interview & content series",
+      "Event curation and production across Johannesburg and beyond"
+    ],
+    "beyond": [
+      "Event Consultation",
+      "Event Concept Development",
+      "Event Curation",
+      "Event Production & Coordination",
+      "Artist Booking & Talent Sourcing",
+      "DJ & Live Music Curation",
+      "MC & Host Booking",
+      "Brand Activations",
+      "Artist Development",
+      "Creative Direction",
+      "Content & Creative Production"
+    ],
+    "rates": [
+      {
+        "label": "Event Curation / Production / Creative Direction / Consulting",
+        "price": "POA"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 13,
+    "name": "Blue Pappi",
+    "image": "images/14-blue-pappi.jpg",
+    "imagePos": "39% 50%",
+    "role": "Hip-Hop & Neo-Soul Artist / Live Performer / Songwriter",
+    "location": "Johannesburg",
+    "genres": [
+      "Hip-Hop",
+      "Neo-Soul"
+    ],
+    "filters": [
+      "music"
+    ],
+    "minRate": 12000,
+    "rateLabel": "from R12,000",
+    "bio": "Blue Pappi is a South African hip-hop and neo-soul artist and member of The Qwellers, rapidly establishing himself as one of the country's most exciting new voices. With 100,000+ monthly listeners and 10 million+ streams, his music has received radio and TV rotation across Metro FM, 5FM, YFM, SABC, TRACE and Channel O. He has collaborated with Sjava, K.O, Anele Zondo, Young Stunna and others, is an accomplished live performer with a full live-band option, and is currently on his first national tour.",
+    "highlights": [
+      "100,000+ monthly Spotify listeners; 10 million+ streams",
+      "Member of The Qwellers",
+      "Collaborated with Sjava, K.O, Young Stunna, Anele Zondo and others",
+      "Radio rotation on Metro FM, 5FM, YFM; TV on TRACE and Channel O",
+      "Experienced live performer with full live-band option; currently on first national tour",
+      "Worked with brands including Jägermeister, Play Energy, Castle Lite, SABC, YFM and TRACE"
+    ],
+    "notable": [
+      "The Qwellers — artist & member",
+      "Sjava One Man Show — live performance",
+      "Bacardi Lifestyle — live performance",
+      "Zone 6 — live performance",
+      "National Tour — currently touring South Africa"
+    ],
+    "rates": [
+      {
+        "label": "Live Performance / Feature (full live-band option)",
+        "price": "from R12,000"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 14,
+    "name": "Kallo",
+    "image": "images/15-kallo.jpg",
+    "imagePos": "center top",
+    "role": "Singer / Songwriter / Live Performer",
+    "location": "South Africa",
+    "genres": [
+      "Singer-Songwriter",
+      "Soul"
+    ],
+    "filters": [
+      "music"
+    ],
+    "minRate": 4000,
+    "rateLabel": "from R4,000",
+    "bio": "Kallo is a South African singer-songwriter shaped by growing up in a musically inclined family. She gained national recognition on Idols South Africa in 2017, earning a Golden Ticket with her distinctive voice and emotive performance style. In 2021 she released her debut EP, Love Over Everything. Her music explores love, resilience and personal growth, making her a strong fit for intimate live experiences, music events and curated entertainment spaces.",
+    "highlights": [
+      "Gained national recognition on Idols South Africa (2017) — Golden Ticket recipient",
+      "Released debut EP Love Over Everything (2021)",
+      "Distinctive voice and emotive, authentic performance style",
+      "Music explores love, resilience and personal growth",
+      "Available for live performances and creative collaborations"
+    ],
+    "notable": [
+      "Idols South Africa — 2017 contestant",
+      "Love Over Everything — debut EP (2021)"
+    ],
+    "rates": [
+      {
+        "label": "Live Vocal Performance / Singer-Songwriter Set",
+        "price": "from R4,000"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 15,
+    "name": "Lula Odiba",
+    "image": "images/16-lula-odiba.jpg",
+    "imagePos": "center 16%",
+    "role": "DJ / Event Host / Media Personality / Radio Presenter",
+    "location": "Johannesburg",
+    "genres": [
+      "Multi-Genre",
+      "Commercial",
+      "Open-Format"
+    ],
+    "filters": [
+      "dj",
+      "mc"
+    ],
+    "minRate": 7000,
+    "rateLabel": "from R7,000",
+    "bio": "Lula Odiba is a South African DJ, event host and media personality with a strong national presence. A national radio presenter and host at 5FM (formerly YFM), she has DJed at 80+ events and worked with 50+ brands through paid partnerships. As a host she brings confidence and professionalism to red carpets, corporate functions, weddings and live events; as a DJ she reads audiences to build sets suited to the occasion.",
+    "highlights": [
+      "National radio presenter and host at 5FM; former YFM personality",
+      "DJed at 80+ events; worked with 50+ brands through paid commercial work",
+      "Hosted red carpet events, corporate functions, weddings and live events",
+      "Versatile across corporate, commercial and entertainment environments"
+    ],
+    "notable": [
+      "5FM — national radio presenter & host",
+      "YFM — former radio personality",
+      "80+ DJ events; 50+ brand collaborations",
+      "Red carpet, corporate and wedding hosting"
+    ],
+    "rates": [
+      {
+        "label": "DJ Set",
+        "price": "from R7,000"
+      },
+      {
+        "label": "Hosting / MC",
+        "price": "from R12,000"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 16,
+    "name": "Thami Lami",
+    "image": "images/17-thami-lami.jpg",
+    "imagePos": "center 30%",
+    "role": "Guitarist / Vocalist / Live Musician",
+    "location": "Johannesburg (available nationwide)",
+    "genres": [
+      "Live Guitar",
+      "Vocals",
+      "Multi-Genre"
+    ],
+    "filters": [
+      "music"
+    ],
+    "minRate": 3000,
+    "rateLabel": "from R3,000",
+    "bio": "Thami Lami is a South African guitarist, vocalist and versatile musician who brings energy, musicality and live instrumentation to a wide range of performances. A member of live band Radio 3000, he has played alongside artists including Nanette, Blue Pappi, Jemapelle James and Just Jabba, performing at The Rand Show, The Artistry, Untitled Basement, The Playground and other live spaces. He works as a solo guitarist and vocalist, as an artist's accompanist, or as part of a full live band.",
+    "highlights": [
+      "Guitarist, vocalist and live musician; member of Radio 3000",
+      "Performed alongside Nanette, Blue Pappi, Jemapelle James and Just Jabba",
+      "Stages: The Rand Show, The Artistry, Untitled Basement, The Playground",
+      "Experience across festivals, weddings, private events and listening sessions",
+      "Available solo, as accompaniment, or in a full live-band setup — nationwide"
+    ],
+    "notable": [
+      "Radio 3000 — live band member",
+      "Artist accompaniment for Nanette, Blue Pappi and Just Jabba",
+      "The Rand Show / The Artistry / Untitled Basement — live performances"
+    ],
+    "rates": [
+      {
+        "label": "Live Guitar / Vocal Performance / Accompaniment",
+        "price": "from R3,000"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 17,
+    "name": "DJ Loopac",
+    "image": "images/18-dj-loopac.jpg",
+    "imagePos": "center top",
+    "role": "DJ / Producer / Hip-Hop Creative",
+    "location": "Newcastle, KwaZulu-Natal",
+    "genres": [
+      "Hip-Hop",
+      "House"
+    ],
+    "filters": [
+      "dj",
+      "music"
+    ],
+    "minRate": 1500,
+    "rateLabel": "from R1,500",
+    "bio": "Wandile 'DJ Loopac' Shabalala is a rising DJ and producer from Newcastle, KwaZulu-Natal, known for reimagining classic house jams into fresh, modern hip-hop anthems. His sound features on fan favourites like 'SHLIME' (feat. Sastii & C-Side Boyz) and 'SOFTLIFE' (feat. MusiholiQ, Mfana Kah Gogo & Jepedoh), and he has released two projects, PACMAN VOL 1 and 2PL8. He has collaborated with LaCabra, Lord Script, MSI and producer Audio Sims.",
+    "highlights": [
+      "Released two projects: PACMAN VOL 1 and 2PL8",
+      "Collaborated with LaCabra, Lord Script and MSI",
+      "Featured with MusiholiQ, Mfana Kah Gogo, Jepedoh, Sastii and C-Side Boyz",
+      "Producer collaborations including Audio Sims",
+      "Versatile hip-hop-focused DJ and producer"
+    ],
+    "notable": [
+      "PACMAN VOL 1 — DJ Loopac",
+      "2PL8 — DJ Loopac",
+      "SHLIME — feat. Sastii & C-Side Boyz",
+      "SOFTLIFE — feat. MusiholiQ, Mfana Kah Gogo & Jepedoh"
+    ],
+    "rates": [
+      {
+        "label": "DJ Set / Booking",
+        "price": "from R1,500"
+      },
+      {
+        "label": "Music Production",
+        "price": "POA"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 18,
+    "name": "K. Fresh",
+    "image": "images/19-k-fresh.jpg",
+    "imagePos": "center 15%",
+    "role": "Multi-Instrumentalist / Bass Guitarist / Producer",
+    "location": "Johannesburg",
+    "genres": [
+      "Live Bass",
+      "Multi-Genre"
+    ],
+    "filters": [
+      "music",
+      "post-production"
+    ],
+    "minRate": 3000,
+    "rateLabel": "from R3,000",
+    "bio": "K. Fresh is a South African multi-instrumentalist, producer and live musician specialising in bass guitar. A member of live band Radio 3000, he has performed across South Africa at corporate events, festivals, live shows, private functions and nightclubs. As a producer he has worked with Cheryl Zondi, Zimkitha, Touchline and The Qwellers, and has released three projects of his own.",
+    "highlights": [
+      "Multi-instrumentalist and producer specialising in bass guitar",
+      "Member of Radio 3000",
+      "Produced and played for Cheryl Zondi, Zimkitha, Touchline and The Qwellers",
+      "Released three solo projects",
+      "Extensive live experience: corporate, festivals, private functions, nightclubs"
+    ],
+    "notable": [
+      "Radio 3000 — bass guitarist / multi-instrumentalist",
+      "Cheryl Zondi / Zimkitha / Touchline / The Qwellers — producer & musician",
+      "Three solo projects — artist / producer"
+    ],
+    "rates": [
+      {
+        "label": "Live Bass / Live-Band Performance / Accompaniment",
+        "price": "from R3,000"
+      },
+      {
+        "label": "Music Production / Studio Session",
+        "price": "POA"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 19,
+    "name": "NashFTL",
+    "image": "images/20-nashftl.jpg",
+    "imagePos": "center 6%",
+    "role": "Producer / Mixing & Mastering Engineer / Studio Owner",
+    "location": "Johannesburg",
+    "genres": [
+      "Production",
+      "Mixing",
+      "Mastering"
+    ],
+    "filters": [
+      "post-production"
+    ],
+    "minRate": 1500,
+    "rateLabel": "from R1,500",
+    "bio": "NashFTL is a South African music producer, mixing and mastering engineer and studio owner with extensive experience across production, recording and audio engineering. He has worked with artists including Slikour, Just Jabba, Lowfeye and Keeme, and on productions connected to TRACE, Channel O and SABC. Through his own studio he offers an end-to-end experience for music, podcasts and creative projects.",
+    "highlights": [
+      "Music producer, mixing & mastering engineer, and studio owner",
+      "Worked with Slikour, Just Jabba, Lowfeye and Keeme",
+      "Productions for TRACE, Channel O and SABC; worked with Slikour on SlikourOnLife",
+      "End-to-end studio: recording, production, mixing, mastering, podcasts",
+      "Experienced with both established and emerging artists"
+    ],
+    "notable": [
+      "Slikour / SlikourOnLife — production & engineering",
+      "Just Jabba / Lowfeye / Keeme — production & engineering",
+      "TRACE / Channel O / SABC — music-related productions"
+    ],
+    "rates": [
+      {
+        "label": "Studio Hire / Recording Session",
+        "price": "from R1,500"
+      },
+      {
+        "label": "Mixing / Mastering / Production",
+        "price": "POA"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 20,
+    "name": "99 Juta",
+    "image": "images/21-99-juta.jpg",
+    "imagePos": "center 45%",
+    "role": "Event Venue / Creative Space",
+    "location": "Braamfontein, Johannesburg",
+    "genres": [
+      "Event Venue",
+      "Creative Space"
+    ],
+    "filters": [
+      "events"
+    ],
+    "minRate": 4000,
+    "rateLabel": "from R4,000",
+    "bio": "99 Juta is a versatile event and creative venue in Braamfontein, Johannesburg. It suits live music shows, parties, corporate events, private functions and creative productions, with sound, a bar, security and food available on-site (own caterer welcome). It is also available as a creative space for music videos, photoshoots, content creation and filming.",
+    "highlights": [
+      "Centrally located in Braamfontein, Johannesburg",
+      "On-site sound, bar, security and food (own caterer welcome)",
+      "Suitable for live music, parties, corporate events and private functions",
+      "Available for music videos, photoshoots, content creation and filming",
+      "Flexible space for artists, creatives, brands and event organisers"
+    ],
+    "notable": [
+      "Live music events, parties and launches",
+      "Corporate events and private functions",
+      "Music video shoots, photoshoots and content creation"
+    ],
+    "rates": [
+      {
+        "label": "Venue Hire (varies by event type, date, duration & scope)",
+        "price": "from R4,000"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 21,
+    "name": "Radio 3000",
+    "image": "images/22-radio-3000.jpg",
+    "imagePos": "center 51%",
+    "role": "Live Band (4-Piece)",
+    "location": "Johannesburg",
+    "genres": [
+      "Live Band",
+      "Multi-Genre"
+    ],
+    "filters": [
+      "music"
+    ],
+    "minRate": 12000,
+    "rateLabel": "from R12,000",
+    "bio": "Radio 3000 is a dynamic four-piece live band — bassist, pianist, guitarist and drummer — bringing a high-energy, versatile live music experience to stages across South Africa. They perform at corporate events, festivals, weddings, private functions and live music events, adapting their full live sound to different artists, audiences and settings.",
+    "highlights": [
+      "Professional four-piece live band (bass, piano, guitar, drums)",
+      "Performed across South Africa",
+      "Corporate events, festivals, weddings and private functions",
+      "Adapts to different event formats and audiences",
+      "Suitable for both intimate and large-scale events"
+    ],
+    "notable": [
+      "Corporate events and festivals",
+      "Weddings and private functions",
+      "Live music events, concerts and shows"
+    ],
+    "rates": [
+      {
+        "label": "Live Band Performance (minimum booking)",
+        "price": "from R12,000"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 22,
+    "name": "Spontaneous DJ",
+    "image": "images/23-spontaneous-dj.jpg",
+    "imagePos": "center 21%",
+    "role": "DJ / Event Entertainer / Music Curator",
+    "location": "Johannesburg",
+    "genres": [
+      "Open-Format",
+      "Multi-Genre"
+    ],
+    "filters": [
+      "dj"
+    ],
+    "minRate": 4500,
+    "rateLabel": "from R4,500",
+    "bio": "Spontaneous DJ is an established Johannesburg-based DJ with 5+ years behind the decks, known for reading a crowd and setting the right atmosphere. His experience spans festivals, brand activations, nightclubs, restaurants, weddings and private functions, tailoring his selection and energy to each occasion.",
+    "highlights": [
+      "5+ years of DJ experience; extensive Johannesburg performance history",
+      "Highly versatile across multiple genres; reads and adapts to crowds",
+      "Festivals, brand activations, nightclubs and restaurants",
+      "Experienced with weddings and private functions",
+      "Professional, adaptable event entertainer"
+    ],
+    "notable": [
+      "Festivals and brand activations",
+      "Nightclubs, restaurants and lounges",
+      "Weddings and private functions"
+    ],
+    "rates": [
+      {
+        "label": "DJ Set / Booking",
+        "price": "from R4,500"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  },
+  {
+    "id": 23,
+    "name": "Philile Sekgothe",
+    "image": "images/24-philile-sekgothe.jpg",
+    "imagePos": "center 8%",
+    "role": "Poet / Performance Artist / Mindfulness Practitioner",
+    "location": "Johannesburg",
+    "genres": [
+      "Poetry",
+      "Spoken Word",
+      "Sound / Meditative"
+    ],
+    "filters": [
+      "spoken-word"
+    ],
+    "minRate": 0,
+    "rateLabel": "POA",
+    "bio": "Philile Sekgothe is a published poet, performance artist, care worker and mindfulness practitioner whose work lives at the intersection of creativity, spirituality and care. Through poetry, sound and performance she explores selfhood, wild-womanhood and Godhood, creating immersive experiences that honour individual and collective healing. Based in Johannesburg, her practice moves across page, stage and soundscape. As a qualified mindfulness teacher she also facilitates workshops and composes meditative sound journeys accompanied by poetic incantations.",
+    "highlights": [
+      "Performed / held sound journeys at Sofar Sounds Johannesburg and Constitution Hill (with Basha Uhuru Freedom Festival)",
+      "Featured at JIAS (Johannesburg Institute of Advanced Studies)",
+      "Performed at the Discovery PACE Awards and the PANSA PA Summit & Awards",
+      "Qualified mindfulness teacher — facilitates workshops and meditative sound journeys",
+      "Work spans page, stage and soundscape: published text, spoken word and performance art"
+    ],
+    "notable": [
+      "Four poems published in the anthology 'Woven with Brown Thread' (ed. Upile Chisala, supported by The Centre for the Less Good Idea)",
+      "Published in New Coin's 'Celebrating Black and Brown Women's Poetry in Southern Africa' (ed. vangile gantsho)",
+      "Spoken-word track 'Bones, Breath and Blessings (Must Meet)' feat. jazz bassist Concord Nkabinde",
+      "Mentor, 2023 SprinNG Writing Fellowship (in partnership with Botsotso)"
+    ],
+    "beyond": [
+      "Facilitator",
+      "Event Curator",
+      "Copywriter",
+      "Community Builder",
+      "Arts Journalist"
+    ],
+    "rates": [
+      {
+        "label": "Performer / Speaker / Sound Journey Composer / Retreat Space-Holder / Corporate Consulting",
+        "price": "POA"
+      }
+    ],
+    "contact": {},
+    "verified": true,
+    "isNew": true
+  }
+]
