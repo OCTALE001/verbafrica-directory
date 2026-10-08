@@ -9,7 +9,6 @@
 | What | Where |
 |---|---|
 | **Public site** | https://octale001.github.io/verbAfrica/ |
-| **Cohort feedback form** | https://docs.google.com/forms/d/e/1FAIpQLSfZ04vwUHNWAFdf5Z7u46lSbafc1iv-mqJ-BD_pnK7fV7fS2A/viewform |
 | **Booking tracker** (private) | Google Sheet: *verbAfrica Bookings* (owned by `alexander@verbafrica.co.za`) |
 | **Repo** | https://github.com/octale001/verbAfrica (GitHub Pages serves `main` as the public site) |
 
@@ -17,12 +16,11 @@
 
 ## Current state
 
-**Phase 2 complete · Beta testing in progress.**
+**Phase 2 complete.**
 
-- The 24-creative beta cohort is loaded onto the platform.
+- The 24-creative cohort is loaded onto the platform.
 - Enquiry + brief forms submit to the booking tracker and send email notifications.
 - Phone/email of cohort hidden on public profiles — all contact routes through the enquiry form.
-- Cohort members have the site + feedback form; gathering UX feedback before trial clients are invited.
 
 See [Strategy/02_Roadmap.md](Strategy/02_Roadmap.md) for the phased plan and decisions log.
 
