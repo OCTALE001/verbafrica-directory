@@ -7,7 +7,7 @@
      single file; it still blocks injected external scripts, off-origin exfiltration (connect-src),
      plugins (object-src) and <base> hijacking. Clickjacking (frame-ancestors) and X-Content-Type
      can only be set via HTTP headers, which GitHub Pages does not allow — accepted limitation. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>verbAfrica Creative Directory</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,11 +74,11 @@ body{
   min-height:100vh; overflow-x:hidden;
 }
 /* Display typeface for brand marks, hero headings, names and section titles */
-.logo,.landing-logo,.cp-select-logo,.cp-nav-mode-badge,
-.landing-hero h1,.how-hero h1,.cp-select-title,.page-hero h1,
-.browse-section-title,.detail-name,.cp-welcome-name,.cp-epk-title,
-.cp-profile-detail-name,.landing-card h2,.how-cta-inner h2,
-.brief-form-card h2,.step-num,.cp-stat-num{
+.logo,.landing-logo,
+.landing-hero h1,.how-hero h1,.page-hero h1,
+.browse-section-title,.detail-name,
+.landing-card h2,.how-cta-inner h2,
+.brief-form-card h2,.step-num{
   font-family:var(--font-head);
 }
 
@@ -248,6 +248,9 @@ body{
   background-color:#E5E7EB;
   position:relative;
 }
+/* No photo yet: show the creative's initials on a brand gradient (never a stock photo). */
+.listing-photo.no-photo{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--purple-d),var(--blue));}
+.listing-initials{font-family:var(--font-head);font-size:44px;font-weight:700;color:rgba(255,255,255,0.92);letter-spacing:0.02em;}
 .listing-photo-overlay{
   position:absolute;top:10px;right:10px;display:flex;gap:6px;
 }
@@ -743,298 +746,6 @@ body{
   margin-top:auto;
 }
 
-/* ══════════════════════════════════════════════════════
-   CREATIVE PORTAL, dark immersive theme
-══════════════════════════════════════════════════════ */
-
-/* Creative nav additions */
-.cp-nav-mode-badge{
-  font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;
-  background:linear-gradient(135deg,#7C3AED,#7C3AED);color:#fff;margin-left:6px;
-}
-.cp-enq-badge{
-  background:#EF4444;color:#fff;border-radius:20px;padding:1px 6px;
-  font-size:10px;font-weight:800;margin-left:4px;
-}
-
-/* Page wrapper */
-.cp-page{ background:var(--dark3)!important; min-height:100vh; }
-
-/* ─── PROFILE SELECTOR ─── */
-.cp-select-hero{
-  text-align:center;
-  padding:64px 24px 48px;
-  background:linear-gradient(180deg,var(--dark3) 0%,var(--dark2) 100%);
-  border-bottom:1px solid var(--border);
-}
-.cp-select-logo{
-  display:inline-flex;align-items:center;gap:10px;
-  font-size:22px;font-weight:800;color:#DDD0FE;margin-bottom:40px;letter-spacing:-0.3px;
-}
-.cp-select-title{
-  font-size:clamp(32px,5vw,54px);font-weight:900;color:#fff;
-  letter-spacing:-1.5px;margin-bottom:12px;
-}
-.cp-select-sub{font-size:16px;color:var(--muted);max-width:420px;margin:0 auto;}
-.cp-select-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-  gap:16px;
-  max-width:1100px;margin:0 auto;padding:40px 32px;
-}
-.cp-sel-card{
-  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  padding:22px 18px;cursor:pointer;text-align:center;
-  transition:all .2s;position:relative;
-}
-.cp-sel-card:hover{
-  border-color:var(--purple);
-  background:rgba(124,58,237,0.10);
-  transform:translateY(-3px);
-  box-shadow:0 12px 32px rgba(124,58,237,0.15);
-}
-.cp-sel-avatar{
-  width:56px;height:56px;border-radius:50%;
-  background:linear-gradient(135deg,var(--purple),#7C3AED);
-  display:flex;align-items:center;justify-content:center;
-  font-size:20px;font-weight:800;color:#fff;
-  margin:0 auto 12px;
-}
-.cp-sel-name{font-size:14px;font-weight:700;color:#DDD0FE;margin-bottom:4px;}
-.cp-sel-role{font-size:12px;color:var(--muted);line-height:1.4;}
-.cp-sel-cat{
-  display:inline-block;margin-top:8px;
-  font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;
-  background:var(--tag-bg);color:var(--purple-l);border:1px solid var(--tag-border);
-}
-.cp-sel-new{
-  position:absolute;top:10px;right:10px;
-  font-size:9px;font-weight:800;padding:2px 6px;border-radius:20px;
-  background:#F59E0B;color:#fff;
-}
-.cp-select-footer{text-align:center;padding:16px 0 40px;}
-.cp-back-link{
-  background:none;border:none;color:var(--muted);font-size:14px;cursor:pointer;
-  transition:color .15s;
-}
-.cp-back-link:hover{color:var(--purple-l);}
-
-/* ─── TABS BAR ─── */
-.cp-tabs-bar{
-  background:var(--dark2);border-bottom:1px solid var(--border);
-  display:flex;align-items:center;gap:4px;
-  padding:0 24px;position:sticky;top:64px;z-index:200;
-  overflow-x:auto;
-}
-.cp-tab{
-  padding:14px 18px;font-size:13px;font-weight:600;cursor:pointer;
-  background:none;border:none;color:var(--muted);
-  border-bottom:3px solid transparent;margin-bottom:-1px;
-  transition:all .15s;white-space:nowrap;
-}
-.cp-tab:hover{color:var(--text);}
-.cp-tab.active{color:var(--purple-l);border-bottom-color:var(--purple);}
-.cp-tab-back{color:var(--purple-l);font-size:18px;font-weight:700;padding:14px 14px;}
-.cp-tab-back:hover{color:var(--purple-l);background:rgba(124,58,237,0.10);}
-.cp-tab-badge{
-  background:#EF4444;color:#fff;border-radius:20px;padding:1px 6px;
-  font-size:10px;font-weight:800;margin-left:4px;
-}
-
-/* ─── CONTENT AREAS ─── */
-.cp-content{ padding:32px;max-width:1100px;margin:0 auto;min-height:70vh; }
-.cp-dash-inner,.cp-profile-inner,.cp-enquiries-inner,.cp-epk-inner{ max-width:900px; }
-
-/* ─── WELCOME BANNER ─── */
-.cp-welcome-banner{
-  background:linear-gradient(135deg,rgba(124,58,237,0.20) 0%,rgba(124,58,237,0.12) 100%);
-  border:1px solid var(--border-hi);border-radius:var(--radius);
-  padding:28px 32px;margin-bottom:28px;
-  display:flex;align-items:center;justify-content:space-between;
-}
-.cp-welcome-sub{font-size:13px;color:var(--muted);margin-bottom:6px;}
-.cp-welcome-name{font-size:28px;font-weight:900;color:#fff;letter-spacing:-0.5px;margin-bottom:4px;}
-.cp-welcome-role{font-size:14px;color:var(--purple-l);}
-.cp-welcome-avatar{
-  width:64px;height:64px;border-radius:50%;
-  background:linear-gradient(135deg,var(--purple),#7C3AED);
-  display:flex;align-items:center;justify-content:center;
-  font-size:24px;font-weight:800;color:#fff;flex-shrink:0;
-}
-
-/* ─── STATS ─── */
-.cp-stats-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-bottom:28px;}
-.cp-stat-card{
-  background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);
-  padding:20px;
-}
-.cp-stat-num{font-size:32px;font-weight:900;color:#fff;margin-bottom:6px;}
-.cp-stat-label{font-size:12px;color:var(--muted);line-height:1.5;}
-.cp-stat-trend{font-size:11px;font-weight:600;}
-.cp-stat-trend.up{color:var(--green);}
-
-/* ─── SECTION TITLE ─── */
-.cp-section-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:14px;}
-.cp-section-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px;}
-
-/* ─── QUICK ACTIONS ─── */
-.cp-quick-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px;}
-.cp-action-btn{
-  display:flex;align-items:center;gap:8px;padding:12px 20px;
-  background:var(--card);border:1px solid var(--border);border-radius:10px;
-  font-size:13px;font-weight:600;color:var(--text);cursor:pointer;
-  transition:all .15s;
-}
-.cp-action-btn:hover{border-color:var(--purple);background:rgba(124,58,237,0.10);color:var(--purple-l);}
-.cp-action-icon{font-size:16px;}
-.cp-action-badge{
-  background:#EF4444;color:#fff;border-radius:20px;padding:1px 6px;font-size:10px;font-weight:800;
-}
-
-/* ─── ACTIVITY LIST ─── */
-.cp-activity-list{display:flex;flex-direction:column;gap:2px;}
-.cp-activity-item{
-  display:flex;align-items:flex-start;gap:14px;padding:14px;
-  background:var(--card);border:1px solid var(--border);border-radius:10px;
-  transition:border-color .15s;
-}
-.cp-activity-item:hover{border-color:var(--border-hi);}
-.cp-activity-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:4px;}
-.cp-activity-dot.green{background:#10B981;}
-.cp-activity-dot.purple{background:#7C3AED;}
-.cp-activity-dot.blue{background:#7C3AED;}
-.cp-activity-dot.amber{background:#F59E0B;}
-.cp-activity-content{flex:1;}
-.cp-activity-title{font-size:13px;color:var(--text);margin-bottom:3px;}
-.cp-activity-meta{font-size:12px;color:var(--muted);}
-.cp-activity-time{font-size:11px;color:var(--muted2);white-space:nowrap;flex-shrink:0;}
-
-/* ─── PROFILE PREVIEW ─── */
-.cp-profile-preview-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:12px;}
-.cp-listing-preview{max-width:340px;}
-.cp-edit-btn{
-  padding:8px 16px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;
-  background:linear-gradient(135deg,#7C3AED,#7C3AED);color:#fff;border:none;
-  transition:opacity .15s;white-space:nowrap;
-}
-.cp-edit-btn:hover{opacity:0.85;}
-
-/* ─── PROFILE DETAIL ─── */
-.cp-profile-detail{
-  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  padding:28px;
-}
-.cp-profile-detail-name{font-size:24px;font-weight:900;color:#fff;margin-bottom:4px;}
-.cp-profile-detail-role{font-size:15px;color:var(--purple-l);margin-bottom:12px;}
-.cp-profile-detail-meta{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-bottom:20px;}
-.cp-profile-detail-bio{font-size:14px;color:var(--text);line-height:1.7;margin-bottom:20px;white-space:pre-line;}
-.cp-detail-section{margin-bottom:20px;}
-.cp-detail-section-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:10px;}
-.cp-highlight-list{display:flex;flex-direction:column;gap:6px;}
-.cp-highlight-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text);}
-.cp-highlight-item::before{content:"★";color:var(--purple-l);font-size:11px;flex-shrink:0;}
-.cp-rate-chips{display:flex;flex-wrap:wrap;gap:8px;}
-.cp-rate-chip{
-  background:rgba(124,58,237,0.10);border:1px solid var(--border-hi);
-  border-radius:8px;padding:8px 14px;font-size:12px;
-}
-.cp-rate-chip-label{color:var(--muted);margin-bottom:2px;}
-.cp-rate-chip-price{font-weight:700;color:var(--purple-l);}
-.cp-genre-tags{display:flex;flex-wrap:wrap;gap:6px;}
-.cp-genre-tag{
-  background:var(--tag-bg);border:1px solid var(--tag-border);color:var(--purple-l);
-  font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;
-}
-
-/* ─── ENQUIRIES ─── */
-.cp-enq-filter-row{display:flex;gap:6px;}
-.cp-enq-filter{
-  padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;
-  background:transparent;border:1px solid var(--border);color:var(--muted);cursor:pointer;
-  transition:all .15s;
-}
-.cp-enq-filter.active,.cp-enq-filter:hover{border-color:var(--purple);color:var(--purple-l);background:rgba(124,58,237,0.10);}
-.cp-enq-card{
-  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  padding:20px 24px;margin-bottom:12px;cursor:pointer;
-  transition:all .15s;
-}
-.cp-enq-card:hover{border-color:var(--purple);background:rgba(124,58,237,0.06);}
-.cp-enq-card.new-enq{border-left:3px solid #10B981;}
-.cp-enq-card.replied-enq{border-left:3px solid var(--muted2);}
-.cp-enq-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px;gap:12px;}
-.cp-enq-client{font-size:14px;font-weight:700;color:#fff;}
-.cp-enq-time{font-size:11px;color:var(--muted2);white-space:nowrap;}
-.cp-enq-project{font-size:13px;color:var(--purple-l);margin-bottom:6px;}
-.cp-enq-desc{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:12px;}
-.cp-enq-meta{display:flex;gap:12px;flex-wrap:wrap;}
-.cp-enq-meta-pill{
-  font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;
-  background:rgba(255,255,255,0.05);color:var(--muted);
-}
-.cp-enq-actions{display:flex;gap:8px;margin-top:14px;}
-.cp-enq-reply-btn{
-  padding:7px 16px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;
-  background:linear-gradient(135deg,#7C3AED,#7C3AED);color:#fff;border:none;
-}
-.cp-enq-ignore-btn{
-  padding:7px 14px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;
-  background:transparent;border:1px solid var(--border);color:var(--muted);
-}
-.cp-enq-status-badge{
-  font-size:10px;font-weight:800;padding:3px 8px;border-radius:20px;
-  text-transform:uppercase;letter-spacing:0.04em;
-}
-.cp-enq-status-badge.new-badge{background:rgba(16,185,129,0.15);color:#10B981;}
-.cp-enq-status-badge.replied-badge{background:rgba(107,114,128,0.15);color:#6B7280;}
-
-/* ─── EPK ─── */
-.cp-epk-card{
-  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  overflow:hidden;margin-bottom:20px;
-}
-.cp-epk-banner{
-  background:linear-gradient(135deg,#7C3AED 0%,#7C3AED 50%,#7C3AED 100%);
-  padding:32px;display:flex;align-items:center;gap:20px;
-}
-.cp-epk-avatar-lg{
-  width:72px;height:72px;border-radius:50%;
-  background:rgba(255,255,255,0.2);backdrop-filter:blur(10px);
-  display:flex;align-items:center;justify-content:center;
-  font-size:26px;font-weight:900;color:#fff;flex-shrink:0;
-}
-.cp-epk-title{font-size:26px;font-weight:900;color:#fff;letter-spacing:-0.5px;margin-bottom:4px;}
-.cp-epk-subtitle{font-size:14px;color:rgba(255,255,255,0.75);}
-.cp-epk-body{padding:28px;}
-.cp-epk-section{margin-bottom:24px;}
-.cp-epk-section-title{
-  font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;
-  color:var(--purple-l);margin-bottom:12px;
-  padding-bottom:8px;border-bottom:1px solid var(--border);
-}
-.cp-epk-body-text{font-size:14px;color:var(--text);line-height:1.7;white-space:pre-line;}
-.cp-epk-highlights{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;}
-.cp-epk-hl{
-  display:flex;align-items:center;gap:8px;
-  background:rgba(124,58,237,0.08);border:1px solid var(--border);
-  border-radius:8px;padding:10px 14px;font-size:13px;color:var(--text);
-}
-.cp-epk-hl::before{content:"✦";color:var(--purple-l);font-size:10px;flex-shrink:0;}
-.cp-epk-rates-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
-.cp-epk-rate{
-  background:rgba(255,255,255,0.03);border:1px solid var(--border);
-  border-radius:10px;padding:14px 16px;
-}
-.cp-epk-rate-label{font-size:12px;color:var(--muted);margin-bottom:4px;}
-.cp-epk-rate-price{font-size:16px;font-weight:800;color:var(--purple-l);}
-.cp-epk-contact{display:flex;flex-wrap:wrap;gap:10px;}
-.cp-epk-contact-item{
-  display:flex;align-items:center;gap:8px;
-  font-size:13px;color:var(--text);
-  background:rgba(255,255,255,0.04);border:1px solid var(--border);
-  border-radius:8px;padding:8px 14px;
-}
-
 /* ─── VERIFIED BADGE ──────────────────────────── */
 .verified-badge{
   display:inline-flex;align-items:center;gap:4px;vertical-align:middle;flex-shrink:0;
@@ -1048,7 +759,6 @@ body{
   font-size:10px;font-weight:800;color:#7C3AED;text-transform:uppercase;letter-spacing:0.05em;
 }
 .detail .verified-badge .vb-text{color:var(--purple-l);}
-.cp-epk-title .verified-badge .ico{background:#fff;color:#7C3AED;}
 
 /* ─── LISTING CARD CTA (Book Now / Request a Quote) ─── */
 .listing-cta{
@@ -1085,7 +795,6 @@ body{
 @media(max-width:680px){
   .nav-burger{display:flex;}
   .nav .post-brief-cta{display:none;}
-  #creativeNav .nav-actions .nav-btn{display:none;}
 }
 
 /* ─── LANDING "HOW IT WORKS" STRIP ────────────── */
@@ -1123,21 +832,12 @@ body{
   .landing-step{max-width:100%;}
 }
 
-/* ─── CREATIVE HUB "SAMPLE DATA" PILL ─────────── */
-.cp-preview-pill{
-  display:inline-block;margin-left:8px;font-size:9px;font-weight:800;letter-spacing:0.06em;
-  text-transform:uppercase;padding:2px 8px;border-radius:20px;
-  background:rgba(245,158,11,0.15);color:var(--amber);border:1px solid rgba(245,158,11,0.35);
-  vertical-align:1px;
-}
-.cp-select-note{font-size:13px;color:var(--muted2);margin-top:10px;}
-
 /* Photo-avatars use a `background:` gradient shorthand for their no-photo fallback,
    which resets background-size to `auto`. When a real photo is set we need `cover`.
    Declared last so it wins on source order; inline background-position (per-creative
    imagePos) still takes precedence over the `center` fallback here. */
 .detail-avatar,.shortlist-item-avatar,.compare-slot-avatar,.compare-col-avatar,
-.brief-match-avatar,.cp-sel-avatar,.cp-welcome-avatar,.cp-epk-avatar-lg{
+.brief-match-avatar{
   background-size:cover;background-position:center;background-repeat:no-repeat;
 }
 </style>
@@ -1214,38 +914,6 @@ body{
   <button class="nav-btn" onclick="closeMobileMenus();showPage('shortlist')">My Shortlist</button>
 </div>
 
-
-<!-- CREATIVE NAV (shown when in creative mode) -->
-<nav class="nav cp-nav" id="creativeNav" style="display:none;">
-  <div class="logo" onclick="cpExitToLanding()">
-    <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
-      <path d="M12 24V10l16-4v14" stroke="#7C3AED" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="8" cy="24" r="4" stroke="#7C3AED" stroke-width="2.4"/>
-      <circle cx="24" cy="20" r="4" stroke="#7C3AED" stroke-width="2.4"/>
-    </svg>
-    verb<span>Africa</span>
-    <span class="cp-nav-mode-badge">Creative</span>
-  </div>
-  <div class="nav-links">
-    <button class="nav-btn" id="cpnav-dash" onclick="cpShowTab('dash')">Dashboard</button>
-    <button class="nav-btn" id="cpnav-profile" onclick="cpShowTab('profile')">My Profile</button>
-    <button class="nav-btn" id="cpnav-enquiries" onclick="cpShowTab('enquiries')">Enquiries <span id="cpEnqBadge" class="cp-enq-badge">3</span></button>
-    <button class="nav-btn" id="cpnav-epk" onclick="cpShowTab('epk')">My EPK</button>
-  </div>
-  <div class="nav-actions">
-    <button class="nav-btn" onclick="cpSwitchToClient()" style="color:#6B7280;font-size:12px;">Switch to Client →</button>
-    <button class="post-brief-cta" onclick="cpEditProfile()" style="background:linear-gradient(135deg,#7C3AED,#7C3AED);">Edit Profile</button>
-    <button class="nav-burger" aria-label="Menu" aria-expanded="false" onclick="toggleMobileMenu('mobileMenuCp', this)"><span class="ico" data-ico="menu"></span></button>
-  </div>
-</nav>
-<div class="nav-mobile-menu" id="mobileMenuCp">
-  <button class="nav-btn" onclick="closeMobileMenus();cpShowTab('dash')">Dashboard</button>
-  <button class="nav-btn" onclick="closeMobileMenus();cpShowTab('profile')">My Profile</button>
-  <button class="nav-btn" onclick="closeMobileMenus();cpShowTab('enquiries')">Enquiries</button>
-  <button class="nav-btn" onclick="closeMobileMenus();cpShowTab('epk')">My EPK</button>
-  <button class="nav-btn" onclick="closeMobileMenus();cpEditProfile()">Edit Profile</button>
-  <button class="nav-btn" onclick="closeMobileMenus();cpSwitchToClient()">Switch to Client →</button>
-</div>
 
 <!-- ══════════ BROWSE PAGE ══════════ -->
 <div class="page" id="page-browse">
@@ -1573,204 +1241,6 @@ body{
 </div>
 
 
-<!-- ══════════ CREATIVE PORTAL ══════════ -->
-<div class="page cp-page" id="page-creative">
-
-  <!-- Profile Selector Screen -->
-  <div id="cpSelectScreen">
-    <div class="cp-select-hero">
-      <div class="cp-select-logo">
-        <svg width="36" height="36" viewBox="0 0 32 32" fill="none">
-          <path d="M12 24V10l16-4v14" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="8" cy="24" r="4" stroke="#A78BFA" stroke-width="2.2"/>
-          <circle cx="24" cy="20" r="4" stroke="#A78BFA" stroke-width="2.2"/>
-        </svg>
-        <span>verbAfrica <span style="font-weight:300;opacity:0.55;">Creative Hub</span></span>
-      </div>
-      <h1 class="cp-select-title">Welcome back.</h1>
-      <p class="cp-select-sub">Select your profile to access your dashboard</p>
-      <p class="cp-select-note">Demo preview, login &amp; sign-up coming soon</p>
-    </div>
-    <div class="cp-select-grid" id="cpSelectGrid"></div>
-    <div class="cp-select-footer">
-      <button class="cp-back-link" onclick="showPage('landing')">← Back to home</button>
-    </div>
-  </div>
-
-  <!-- Main Dashboard (shown after profile selection) -->
-  <div id="cpDashboard" style="display:none;">
-
-    <!-- Sticky tab bar -->
-    <div class="cp-tabs-bar">
-      <button class="cp-tab cp-tab-back" onclick="cpBackToSelect()" title="Back to profiles">←</button>
-      <button class="cp-tab active" id="cptab-dash" onclick="cpShowTab('dash')">Dashboard</button>
-      <button class="cp-tab" id="cptab-profile" onclick="cpShowTab('profile')">My Profile</button>
-      <button class="cp-tab" id="cptab-enquiries" onclick="cpShowTab('enquiries')">Enquiries <span class="cp-tab-badge">3</span></button>
-      <button class="cp-tab" id="cptab-epk" onclick="cpShowTab('epk')">My EPK</button>
-    </div>
-
-    <!-- ─── TAB: DASHBOARD ─── -->
-    <div class="cp-content" id="cpcontent-dash">
-      <div class="cp-dash-inner">
-
-        <!-- Welcome banner -->
-        <div class="cp-welcome-banner" id="cpWelcomeBanner">
-          <div class="cp-welcome-text">
-            <div class="cp-welcome-sub">Good to see you,</div>
-            <div class="cp-welcome-name" id="cpWelcomeName">Creative</div>
-            <div class="cp-welcome-role" id="cpWelcomeRole"></div>
-          </div>
-          <div class="cp-welcome-avatar" id="cpWelcomeAvatar"></div>
-        </div>
-
-        <!-- Stats row -->
-        <div class="cp-section-title">Your Stats <span class="cp-preview-pill">Sample data</span></div>
-        <div class="cp-stats-row">
-          <div class="cp-stat-card">
-            <div class="cp-stat-num">142</div>
-            <div class="cp-stat-label">Profile views<br><span class="cp-stat-trend up">↑ 18% this week</span></div>
-          </div>
-          <div class="cp-stat-card">
-            <div class="cp-stat-num">3</div>
-            <div class="cp-stat-label">New enquiries<br><span class="cp-stat-trend up">↑ 2 since yesterday</span></div>
-          </div>
-          <div class="cp-stat-card">
-            <div class="cp-stat-num" id="cpShortlistCount">-</div>
-            <div class="cp-stat-label">Times shortlisted<br><span class="cp-stat-trend">this month</span></div>
-          </div>
-          <div class="cp-stat-card">
-            <div class="cp-stat-num">89%</div>
-            <div class="cp-stat-label">Profile completeness<br><span class="cp-stat-trend up">Add EPK to reach 100%</span></div>
-          </div>
-        </div>
-
-        <!-- Quick actions -->
-        <div class="cp-section-title">Quick Actions</div>
-        <div class="cp-quick-actions">
-          <button class="cp-action-btn" onclick="cpShowTab('enquiries')">
-            <span class="cp-action-icon"><span class="ico" data-ico="message"></span></span>
-            <span>View Enquiries</span>
-            <span class="cp-action-badge">3</span>
-          </button>
-          <button class="cp-action-btn" onclick="cpShowTab('profile')">
-            <span class="cp-action-icon"><span class="ico" data-ico="eye"></span></span>
-            <span>Preview Profile</span>
-          </button>
-          <button class="cp-action-btn" onclick="cpShowTab('epk')">
-            <span class="cp-action-icon"><span class="ico" data-ico="clipboard"></span></span>
-            <span>View My EPK</span>
-          </button>
-          <button class="cp-action-btn" onclick="cpEditProfile()">
-            <span class="cp-action-icon"><span class="ico" data-ico="edit"></span></span>
-            <span>Edit Profile</span>
-          </button>
-        </div>
-
-        <!-- Recent activity -->
-        <div class="cp-section-title">Recent Activity <span class="cp-preview-pill">Sample data</span></div>
-        <div class="cp-activity-list">
-          <div class="cp-activity-item">
-            <div class="cp-activity-dot green"></div>
-            <div class="cp-activity-content">
-              <div class="cp-activity-title">New enquiry from <strong>Event Horizon</strong></div>
-              <div class="cp-activity-meta">Corporate event · Johannesburg · Budget R15,000-R50,000</div>
-            </div>
-            <div class="cp-activity-time">2h ago</div>
-          </div>
-          <div class="cp-activity-item">
-            <div class="cp-activity-dot purple"></div>
-            <div class="cp-activity-content">
-              <div class="cp-activity-title">Added to shortlist by a client</div>
-              <div class="cp-activity-meta">Client browsed Photography & Video</div>
-            </div>
-            <div class="cp-activity-time">5h ago</div>
-          </div>
-          <div class="cp-activity-item">
-            <div class="cp-activity-dot blue"></div>
-            <div class="cp-activity-content">
-              <div class="cp-activity-title">Profile viewed 12 times</div>
-              <div class="cp-activity-meta">Search terms: your role, location</div>
-            </div>
-            <div class="cp-activity-time">Today</div>
-          </div>
-          <div class="cp-activity-item">
-            <div class="cp-activity-dot purple"></div>
-            <div class="cp-activity-content">
-              <div class="cp-activity-title">New enquiry from <strong>Nando's Brand Team</strong></div>
-              <div class="cp-activity-meta">Brand campaign · Cape Town · Budget R5,000-R15,000</div>
-            </div>
-            <div class="cp-activity-time">Yesterday</div>
-          </div>
-          <div class="cp-activity-item">
-            <div class="cp-activity-dot amber"></div>
-            <div class="cp-activity-content">
-              <div class="cp-activity-title">Profile completeness reminder</div>
-              <div class="cp-activity-meta">Upload your EPK PDF to reach 100% completeness</div>
-            </div>
-            <div class="cp-activity-time">3 days ago</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- ─── TAB: MY PROFILE ─── -->
-    <div class="cp-content" id="cpcontent-profile" style="display:none;">
-      <div class="cp-profile-inner">
-        <div class="cp-section-header">
-          <div>
-            <div class="cp-section-title" style="margin-bottom:4px;">My Profile</div>
-            <p style="font-size:14px;color:var(--muted);">This is how clients see your listing in the directory</p>
-          </div>
-          <button class="cp-edit-btn" onclick="cpEditProfile()"><span class="ico" data-ico="edit"></span> Edit Profile</button>
-        </div>
-
-        <!-- Preview card -->
-        <div class="cp-profile-preview-label">Your listing card</div>
-        <div class="cp-listing-preview" id="cpListingPreview"></div>
-
-        <!-- Full profile detail -->
-        <div class="cp-profile-preview-label" style="margin-top:32px;">Full profile view</div>
-        <div class="cp-profile-detail" id="cpProfileDetail"></div>
-      </div>
-    </div>
-
-    <!-- ─── TAB: ENQUIRIES ─── -->
-    <div class="cp-content" id="cpcontent-enquiries" style="display:none;">
-      <div class="cp-enquiries-inner">
-        <div class="cp-section-header">
-          <div>
-            <div class="cp-section-title" style="margin-bottom:4px;">Enquiries <span class="cp-preview-pill">Sample data</span></div>
-            <p style="font-size:14px;color:var(--muted);">Incoming briefs and booking requests from clients</p>
-          </div>
-          <div class="cp-enq-filter-row">
-            <button class="cp-enq-filter active" onclick="cpFilterEnq('all',this)">All</button>
-            <button class="cp-enq-filter" onclick="cpFilterEnq('new',this)">New</button>
-            <button class="cp-enq-filter" onclick="cpFilterEnq('replied',this)">Replied</button>
-          </div>
-        </div>
-        <div id="cpEnqList"></div>
-      </div>
-    </div>
-
-    <!-- ─── TAB: MY EPK ─── -->
-    <div class="cp-content" id="cpcontent-epk" style="display:none;">
-      <div class="cp-epk-inner">
-        <div class="cp-section-header">
-          <div>
-            <div class="cp-section-title" style="margin-bottom:4px;">My EPK</div>
-            <p style="font-size:14px;color:var(--muted);">Your Electronic Press Kit, all your professional details in one place</p>
-          </div>
-          <button class="cp-edit-btn" onclick="cpEditProfile()"><span class="ico" data-ico="edit"></span> Update EPK</button>
-        </div>
-        <div id="cpEpkContent"></div>
-      </div>
-    </div>
-
-  </div><!-- end cpDashboard -->
-</div><!-- end page-creative -->
-
-
 <!-- ══════════ DETAIL OVERLAY ══════════ -->
 <div class="overlay" id="detailOverlay" onclick="closeDetail(event)">
   <div class="detail" id="detailCard"></div>
@@ -1828,14 +1298,7 @@ window.VA_CONFIG = {
   CONTACT_FALLBACK: 'alexander@verbafrica.co.za'  // shown if endpoint fails
 };
 
-/* ─── ESCAPING / SANITISING HELPERS ─────────────────── */
-/* Escape text before it goes into innerHTML. Data is curated in creatives.json, so this is
-   defence-in-depth: it keeps a stray &, <, > or quote from breaking markup or injecting nodes. */
-function escapeHtml(v){
-  return String(v == null ? '' : v)
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
-}
+/* ─── FORM INPUT LIMITS ─────────────────────────────── */
 /* Cap a string length client-side (the Apps Script caps again server-side). */
 function clampStr(v, n){ const s = String(v == null ? '' : v); return s.length > n ? s.slice(0, n) : s; }
 /* Apply sane caps to every string field in a form payload before it leaves the browser. */
@@ -2015,17 +1478,6 @@ function rateInBudget(creative, budget){
 
 /* ─── PAGES ────────────────────────────────────────── */
 function enterApp(p){
-  if(p === 'creative'){
-    $('mainNav').style.display='none';
-    // reset selector screen
-    $('cpSelectScreen').style.display='block';
-    $('cpDashboard').style.display='none';
-    document.querySelectorAll('.page').forEach(el=>el.classList.remove('active'));
-    $('page-creative').classList.add('active');
-    state.page='creative';
-    window.scrollTo(0,0);
-    return;
-  }
   $('mainNav').style.display='flex';
   showPage(p);
 }
@@ -2068,35 +1520,6 @@ document.getElementById('budgetFilter').addEventListener('change', e=>{
   renderGrid();
 });
 
-/* ─── PHOTO MAP ──────────────────────────────────────── */
-const photoMap = {
-  music: [
-    'photo-1493225457124-a3eb161ffa5f', // concert performer
-    'photo-1516450360452-9312f5e86fc7', // stage/crowd
-    'photo-1511671782779-bbe4f80842b3', // singer mic
-    'photo-1514320291840-2e0a9bf2a9ae', // musician
-    'photo-1509347528160-9a9e33742cdb', // hip hop
-    'photo-1516373354934-fcdf702f5c22', // concert lights
-    'photo-1510915361894-db8b60106cb1', // live music
-  ],
-  dj:   ['photo-1571330735066-03aaa9429d89','photo-1598653222000-6b7b7a552625','photo-1574169208507-84376144848b'],
-  mc:   ['photo-1540039155733-5bb30b4f40b8','photo-1478737270239-2f02b77fc618','photo-1576085898274-d18e1da03c52'],
-  photography: ['photo-1516035069371-29a1b244cc32','photo-1542038139-8fb5b0de9509','photo-1554048612-b6a482bc67e5'],
-  'post-production': ['photo-1598488035139-bdbb2231ce04','photo-1574717024453-354d1a68e597','photo-1598397767886-86bb0f0b74d3'],
-  content: ['photo-1611532736597-de2d4265fba3','photo-1557838923-2985c318be48','photo-1542744094-3a31f272c490'],
-};
-function getPhoto(c){
-  if(c.image) return c.image;
-  const cat = c.filters[0] || 'music';
-  const pool = photoMap[cat] || photoMap.music;
-  const idx = c.id % pool.length;
-  return `https://images.unsplash.com/${pool[idx]}?w=480&h=260&fit=crop&q=80`;
-}
-/* Ratings are 0 until real reviews exist, no fabricated social proof.
-   The card hides the rating row entirely when reviewCount is 0. */
-function fakeRating(id){ return 0; }
-function fakeReviews(id){ return 0; }
-
 /* Loading state: true once creatives.json has resolved */
 let dataLoaded = false;
 function skeletonCards(n=8){
@@ -2137,12 +1560,9 @@ function renderGrid(){
   g.innerHTML = filtered.map(c => {
     const inShortlist = state.shortlist.includes(c.id);
     const inCompare   = state.compare.includes(c.id);
-    const rating  = fakeRating(c.id);
-    const reviews = fakeReviews(c.id);
-    const photo   = getPhoto(c);
     return `
     <div class="listing-card${inCompare?' in-compare':''}" id="card-${c.id}" onclick="showProfile(${c.id})">
-      <div class="listing-photo" role="img" aria-label="Photo of ${c.name}" style="background-image:url('${photo}');background-position:${c.imagePos||'center'}">
+      <div class="listing-photo${c.image?'':' no-photo'}" role="img" aria-label="${c.image?'Photo of ':''}${c.name}"${c.image?` style="background-image:url('${c.image}');background-position:${c.imagePos||'center'}"`:''}>${c.image?'':`<span class="listing-initials" aria-hidden="true">${initials(c.name)}</span>`}
         <div class="listing-photo-overlay">
           <button class="listing-save-btn${inShortlist?' saved':''}"
             title="Save to shortlist" aria-label="Save ${c.name} to shortlist"
@@ -2163,7 +1583,7 @@ function renderGrid(){
         <div class="listing-role">${c.role}</div>
         <div class="listing-desc">${c.bio}</div>
         <div class="listing-footer">
-          ${reviews>0?`<div class="listing-rating"><span class="star">★</span> ${rating} (${reviews})</div>`:`<div class="listing-rating" style="color:var(--muted2)">New to verbAfrica</div>`}
+          <div class="listing-rating" style="color:var(--muted2)">New to verbAfrica</div>
           <div class="listing-location">${c.location||'South Africa'}</div>
         </div>
         <div class="listing-bottom-row">
@@ -2661,313 +2081,6 @@ document.addEventListener('click', e=>{
 });
 
 
-/* ══════════════════════════════════════════════════════
-   CREATIVE PORTAL JS
-══════════════════════════════════════════════════════ */
-let cpState = { creativeId: null };
-
-const mockEnquiries = [
-  { id:1, client:"Event Horizon Productions", project:"Corporate Gala: DJ Set", desc:"Looking for a high-energy DJ for our annual corporate gala in Sandton. 300 guests, 4-hour set, evening event. Need someone with crowd-reading ability and can mix Amapiano, Afro Tech, and House.", location:"Sandton, JHB", budget:"R15,000 to R50,000", timeline:"3 weeks", status:"new", time:"2h ago", category:"dj" },
-  { id:2, client:"Nando's Brand Team", project:"Brand Activation: Content Creation", desc:"We're running a city-wide activation campaign and need a content creator to cover 3 Joburg events over 2 days. Instagram and TikTok deliverables required.", location:"Johannesburg", budget:"R5,000 to R15,000", timeline:"2 weeks", status:"new", time:"Yesterday", category:"content" },
-  { id:3, client:"TopBilling Live Events", project:"Live Performance: Festival Stage", desc:"We have a slot available at our upcoming festival. Looking for a solo or band performance, up to 45 minutes. All genres welcome.", location:"Cape Town", budget:"R15,000 to R50,000", timeline:"6 weeks", status:"replied", time:"3 days ago", category:"music" },
-];
-
-function cpEnterCreative(id) {
-  cpState.creativeId = id;
-  const c = creatives.find(x => x.id === id);
-  if (!c) return;
-
-  // Hide selector, show dashboard
-  $('cpSelectScreen').style.display = 'none';
-  $('cpDashboard').style.display = 'block';
-
-  // Update welcome banner
-  $('cpWelcomeName').textContent = c.name;
-  $('cpWelcomeRole').textContent = c.role;
-  const _av=$('cpWelcomeAvatar');
-  _av.textContent=c.image?'':initials(c.name);
-  _av.style.backgroundImage=c.image?`url('${c.image}')`:'';
-  _av.style.backgroundSize='cover';
-  _av.style.backgroundPosition='center top';
-
-  // Stats: shortlist count (random seeded)
-  $('cpShortlistCount').textContent = 5 + (c.id * 7 % 23);
-
-  // Swap nav to creative nav
-  $('mainNav').style.display = 'none';
-  $('creativeNav').style.display = 'flex';
-
-  // Update creative nav active state
-  cpSetNavActive('dash');
-
-  // Render profile tab content
-  cpRenderProfile(c);
-  cpRenderEpk(c);
-  cpRenderEnquiries(c);
-
-  cpShowTab('dash');
-}
-
-function cpSetNavActive(tab) {
-  ['dash','profile','enquiries','epk'].forEach(t => {
-    const nb = $('cpnav-' + t);
-    if (nb) nb.classList.toggle('active', t === tab);
-  });
-}
-
-function cpShowTab(tab) {
-  ['dash','profile','enquiries','epk'].forEach(t => {
-    const content = $('cpcontent-' + t);
-    const btn = $('cptab-' + t);
-    if (content) content.style.display = t === tab ? 'block' : 'none';
-    if (btn) btn.classList.toggle('active', t === tab);
-  });
-  cpSetNavActive(tab);
-  window.scrollTo(0, 0);
-}
-
-function cpRenderProfile(c) {
-  // Mini listing card preview
-  const photo = getPhoto(c);
-  const rating = fakeRating(c.id);
-  const reviews = fakeReviews(c.id);
-  $('cpListingPreview').innerHTML = `
-    <div class="listing-card" style="max-width:320px;cursor:default;">
-      <div class="listing-photo" role="img" aria-label="Photo of ${c.name}" style="background-image:url('${photo}');background-position:${c.imagePos||'center'}">
-        <div class="listing-photo-overlay">
-          <button class="listing-save-btn" style="cursor:default;" aria-label="Save" tabindex="-1">${icon('heart')}</button>
-        </div>
-        <div class="listing-photo-badges">
-                    <span class="listing-badge available">Available</span>
-        </div>
-      </div>
-      <div class="listing-body">
-        <div class="listing-top">
-          <div class="listing-name">${c.name} ${verifiedBadge(c)}</div>
-          <div class="listing-rate">${c.rateLabel}</div>
-        </div>
-        <div class="listing-role">${c.role}</div>
-        <div class="listing-desc">${c.bio.substring(0, 100)}…</div>
-        <div class="listing-footer">
-          ${reviews>0?`<div class="listing-rating"><span class="star">★</span> ${rating} (${reviews})</div>`:`<div class="listing-rating" style="color:var(--muted2)">New to verbAfrica</div>`}
-          <div class="listing-location">${c.location || 'South Africa'}</div>
-        </div>
-      </div>
-    </div>`;
-
-  // Full profile detail
-  $('cpProfileDetail').innerHTML = `
-    <div class="cp-profile-detail-name">${c.name}</div>
-    <div class="cp-profile-detail-role">${c.role}</div>
-    <div class="cp-profile-detail-meta">
-      <span>${c.location || 'South Africa'}</span>
-      <span>${icon('wallet')} ${c.rateLabel}</span>
-      ${reviews>0?`<span>${icon('star')} ${rating} (${reviews} reviews)</span>`:''}
-    </div>
-    <div class="cp-profile-detail-bio">${c.bio}</div>
-    <div class="cp-detail-section">
-      <div class="cp-detail-section-title">Key Highlights</div>
-      <div class="cp-highlight-list">
-        ${c.highlights.map(h => `<div class="cp-highlight-item">${h}</div>`).join('')}
-      </div>
-    </div>
-    <div class="cp-detail-section">
-      <div class="cp-detail-section-title">Notable Work</div>
-      <div class="cp-genre-tags">
-        ${c.notable.map(n => `<span class="cp-genre-tag">${n}</span>`).join('')}
-      </div>
-    </div>
-    ${c.beyond?.length ? `
-    <div class="cp-detail-section">
-      <div class="cp-detail-section-title">Beyond the Music</div>
-      <div class="cp-genre-tags">
-        ${c.beyond.map(b => `<span class="cp-genre-tag">${b}</span>`).join('')}
-      </div>
-    </div>` : ''}
-    <div class="cp-detail-section">
-      <div class="cp-detail-section-title">Genres & Tags</div>
-      <div class="cp-genre-tags">
-        ${c.genres.map(g => `<span class="cp-genre-tag">${g}</span>`).join('')}
-      </div>
-    </div>
-    <div class="cp-detail-section">
-      <div class="cp-detail-section-title">Rate Card</div>
-      <div class="cp-rate-chips">
-        ${c.rates.map(r => `<div class="cp-rate-chip"><div class="cp-rate-chip-label">${r.label}</div><div class="cp-rate-chip-price">${r.price}</div></div>`).join('')}
-      </div>
-    </div>`;
-  hydrateIcons($('cpListingPreview'));
-  hydrateIcons($('cpProfileDetail'));
-}
-
-function cpRenderEpk(c) {
-  const contactItems = [];
-  if (c.contact?.instagram) contactItems.push(igLink(c.contact.instagram,`class="cp-epk-contact-item" style="text-decoration:none;cursor:pointer;"`));
-  if (c.contact?.email) contactItems.push(`<div class="cp-epk-contact-item">${icon('mail')} ${c.contact.email}</div>`);
-  if (c.contact?.phone) contactItems.push(`<div class="cp-epk-contact-item">${icon('phone')} ${c.contact.phone}</div>`);
-
-  $('cpEpkContent').innerHTML = `
-    <div class="cp-epk-card">
-      <div class="cp-epk-banner">
-        <div class="cp-epk-avatar-lg" ${avatarBg(c)}>${avatarText(c)}</div>
-        <div>
-          <div class="cp-epk-title">${c.name} ${verifiedBadge(c)}</div>
-          <div class="cp-epk-subtitle">${c.role} &nbsp;·&nbsp; ${c.location || 'South Africa'}</div>
-        </div>
-      </div>
-      <div class="cp-epk-body">
-        <div class="cp-epk-section">
-          <div class="cp-epk-section-title">About</div>
-          <div class="cp-epk-body-text">${c.bio}</div>
-        </div>
-        <div class="cp-epk-section">
-          <div class="cp-epk-section-title">Highlights</div>
-          <div class="cp-epk-highlights">
-            ${c.highlights.map(h => `<div class="cp-epk-hl">${h}</div>`).join('')}
-          </div>
-        </div>
-        <div class="cp-epk-section">
-          <div class="cp-epk-section-title">Notable Work</div>
-          <div class="cp-genre-tags">
-            ${c.notable.map(n => `<span class="cp-genre-tag">${n}</span>`).join('')}
-          </div>
-        </div>
-        ${c.beyond?.length ? `
-        <div class="cp-epk-section">
-          <div class="cp-epk-section-title">Beyond the Music</div>
-          <div class="cp-genre-tags">
-            ${c.beyond.map(b => `<span class="cp-genre-tag">${b}</span>`).join('')}
-          </div>
-        </div>` : ''}
-        <div class="cp-epk-section">
-          <div class="cp-epk-section-title">Genres</div>
-          <div class="cp-genre-tags">
-            ${c.genres.map(g => `<span class="cp-genre-tag">${g}</span>`).join('')}
-          </div>
-        </div>
-        <div class="cp-epk-section">
-          <div class="cp-epk-section-title">Rate Card</div>
-          <div class="cp-epk-rates-grid">
-            ${c.rates.map(r => `<div class="cp-epk-rate"><div class="cp-epk-rate-label">${r.label}</div><div class="cp-epk-rate-price">${r.price}</div></div>`).join('')}
-          </div>
-        </div>
-        ${contactItems.length ? `
-        <div class="cp-epk-section">
-          <div class="cp-epk-section-title">Contact</div>
-          <div class="cp-epk-contact">${contactItems.join('')}</div>
-        </div>` : ''}
-      </div>
-    </div>`;
-  hydrateIcons($('cpEpkContent'));
-}
-
-const catLabels = { music:"Music", dj:"DJ", mc:"MC / Host", photography:"Photography", "post-production":"Post Production", content:"Content" };
-
-function cpRenderEnquiries(c) {
-  // Filter to relevant enquiries based on this creative's categories
-  const relevant = mockEnquiries.filter(e =>
-    c.filters.includes(e.category) || e.category === 'music'
-  );
-  cpRenderEnqList(relevant);
-}
-
-function cpRenderEnqList(list) {
-  if (!list.length) {
-    $('cpEnqList').innerHTML = `<div style="text-align:center;padding:48px 0;color:var(--muted)">No enquiries yet</div>`;
-    return;
-  }
-  $('cpEnqList').innerHTML = list.map(e => `
-    <div class="cp-enq-card ${e.status === 'new' ? 'new-enq' : 'replied-enq'}">
-      <div class="cp-enq-top">
-        <div>
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
-            <div class="cp-enq-client">${e.client}</div>
-            <span class="cp-enq-status-badge ${e.status === 'new' ? 'new-badge' : 'replied-badge'}">${e.status === 'new' ? 'New' : 'Replied'}</span>
-          </div>
-          <div class="cp-enq-project">${e.project}</div>
-        </div>
-        <div class="cp-enq-time">${e.time}</div>
-      </div>
-      <div class="cp-enq-desc">${e.desc}</div>
-      <div class="cp-enq-meta">
-        <span class="cp-enq-meta-pill">${e.location}</span>
-        <span class="cp-enq-meta-pill">${icon('wallet')} ${e.budget}</span>
-        <span class="cp-enq-meta-pill">${icon('clock')} ${e.timeline}</span>
-        <span class="cp-enq-meta-pill">${catLabels[e.category] || e.category}</span>
-      </div>
-      ${e.status === 'new' ? `
-      <div class="cp-enq-actions">
-        <button class="cp-enq-reply-btn" onclick="cpReplyEnq(${e.id})">Reply to Enquiry</button>
-        <button class="cp-enq-ignore-btn" onclick="cpIgnoreEnq(${e.id})">Mark as seen</button>
-      </div>` : ''}
-    </div>`).join('');
-  hydrateIcons($('cpEnqList'));
-}
-
-function cpFilterEnq(filter, btn) {
-  document.querySelectorAll('.cp-enq-filter').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  const c = creatives.find(x => x.id === cpState.creativeId);
-  if (!c) return;
-  let list = mockEnquiries.filter(e => c.filters.includes(e.category) || e.category === 'music');
-  if (filter !== 'all') list = list.filter(e => e.status === filter);
-  cpRenderEnqList(list);
-}
-
-function cpReplyEnq(id) {
-  showToast('Opening reply, coming soon!', 'success');
-}
-function cpIgnoreEnq(id) {
-  const enq = mockEnquiries.find(e => e.id === id);
-  if (enq) { enq.status = 'replied'; }
-  const c = creatives.find(x => x.id === cpState.creativeId);
-  if (c) cpRenderEnquiries(c);
-  showToast('Marked as seen');
-  // update badges
-  const newCount = mockEnquiries.filter(e => e.status === 'new').length;
-  const badge = document.getElementById('cpEnqBadge');
-  if (badge) badge.textContent = newCount;
-  document.querySelectorAll('.cp-tab-badge').forEach(b => b.textContent = newCount);
-}
-
-function cpEditProfile() {
-  showToast('Profile editing, coming in the next release!');
-}
-
-function cpExitToLanding() {
-  $('creativeNav').style.display = 'none';
-  cpState.creativeId = null;
-  showPage('landing');
-}
-
-function cpBackToSelect() {
-  // Return from a creative's dashboard to the profile-selector screen.
-  $('creativeNav').style.display = 'none';
-  $('cpDashboard').style.display = 'none';
-  $('cpSelectScreen').style.display = 'block';
-  cpState.creativeId = null;
-  window.scrollTo(0, 0);
-}
-
-function cpSwitchToClient() {
-  $('creativeNav').style.display = 'none';
-  cpState.creativeId = null;
-  enterApp('browse');
-}
-
-function cpRenderSelectGrid() {
-  const grid = $('cpSelectGrid');
-  if (!grid) return;
-  grid.innerHTML = creatives.map(c => `
-    <div class="cp-sel-card" onclick="cpEnterCreative(${c.id})">
-            <div class="cp-sel-avatar" ${avatarBg(c)}>${avatarText(c)}</div>
-      <div class="cp-sel-name">${c.name}</div>
-      <div class="cp-sel-role">${c.role}</div>
-      <div class="cp-sel-cat">${catLabels[c.filters[0]] || c.filters[0]}</div>
-    </div>`).join('');
-}
-
-
 /* ─── INIT ────────────────────────────────────────────── */
 /* Landing is fully static, show it immediately so a data-load failure
    (e.g. opened via file://, or a network blip) never leaves a black screen. */
@@ -2980,7 +2093,6 @@ fetch('data/creatives.json?v=' + Date.now(), { cache: 'no-store' })
     creatives = data;
     dataLoaded = true;
     updateShortlistNav();
-    cpRenderSelectGrid();
     renderGrid();   // replace skeletons / populate the grid in case the user navigated there first
   })
   .catch(e => {

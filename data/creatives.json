@@ -39,8 +39,7 @@
     "contact": {
       "instagram": "@chefnqobi"
     },
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 10,
@@ -115,8 +114,7 @@
       "youtube": "@justjabba",
       "spotify": "Just Jabba"
     },
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 8,
@@ -188,8 +186,7 @@
     "contact": {
       "instagram": "@shivolski"
     },
-    "verified": true,
-    "isNew": false
+    "verified": true
   },
   {
     "id": 1,
@@ -263,8 +260,7 @@
     "contact": {
       "instagram": "@dg_tal.jpeg"
     },
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 2,
@@ -330,8 +326,7 @@
     "contact": {
       "instagram": "@fifi_frequency"
     },
-    "verified": true,
-    "isNew": false
+    "verified": true
   },
   {
     "id": 3,
@@ -406,8 +401,7 @@
     "contact": {
       "instagram": "@HAZYHAZY_SA"
     },
-    "verified": true,
-    "isNew": false
+    "verified": true
   },
   {
     "id": 4,
@@ -453,8 +447,7 @@
     "contact": {
       "instagram": "@kgaldrogo"
     },
-    "verified": true,
-    "isNew": false
+    "verified": true
   },
   {
     "id": 5,
@@ -501,8 +494,7 @@
     "contact": {
       "instagram": "@lumairsa"
     },
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 6,
@@ -551,8 +543,7 @@
     "contact": {
       "instagram": "@ohteeh"
     },
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 7,
@@ -606,8 +597,7 @@
     "contact": {
       "instagram": "@serutheellipsis"
     },
-    "verified": true,
-    "isNew": false
+    "verified": true
   },
   {
     "id": 9,
@@ -675,8 +665,7 @@
       "linkedin": "zolelo-magwaza-438357156",
       "portfolio": "https://niaoff-schuorst-raoks.yolasite.com"
     },
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 11,
@@ -723,8 +712,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 12,
@@ -777,8 +765,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 13,
@@ -819,8 +806,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 14,
@@ -857,8 +843,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 15,
@@ -902,8 +887,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 16,
@@ -942,8 +926,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 17,
@@ -987,8 +970,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 18,
@@ -1031,8 +1013,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 19,
@@ -1075,8 +1056,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 20,
@@ -1114,8 +1094,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 21,
@@ -1153,8 +1132,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 22,
@@ -1192,8 +1170,7 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   },
   {
     "id": 23,
@@ -1240,7 +1217,6 @@
       }
     ],
     "contact": {},
-    "verified": true,
-    "isNew": true
+    "verified": true
   }
 ]
