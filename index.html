@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Content Security Policy. 'unsafe-inline' is required because all CSS/JS is inline in this
+     single file; it still blocks injected external scripts, off-origin exfiltration (connect-src),
+     plugins (object-src) and <base> hijacking. Clickjacking (frame-ancestors) and X-Content-Type
+     can only be set via HTTP headers, which GitHub Pages does not allow — accepted limitation. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>verbAfrica Creative Directory</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1175,7 +1181,7 @@ body{
   <div class="landing-steps-wrap">
     <button class="landing-steps-link" onclick="enterApp('how')">See how it works →</button>
   </div>
-  <div class="landing-footer">© 2026 verbAfrica. All rights reserved.</div>
+  <div class="landing-footer">© 2026 verbAfrica. All rights reserved. &bull; <a href="#privacy" onclick="openPrivacy(event)" style="color:inherit;text-decoration:underline">Privacy</a></div>
 </div>
 
 <!-- NAV (hidden on landing) -->
@@ -1321,7 +1327,7 @@ body{
   </div>
 
   <div class="footer" style="background:#F9FAFB;color:#9CA3AF;border-top:1px solid #E5E7EB;">
-    <div>verbAfrica Creative Directory &bull; 2026 &bull; All rates in ZAR &bull; Rates are indicative</div>
+    <div>verbAfrica Creative Directory &bull; 2026 &bull; All rates in ZAR &bull; Rates are indicative &bull; <a href="#privacy" onclick="openPrivacy(event)" style="color:#7C3AED;text-decoration:none;font-weight:600">Privacy</a></div>
     <div style="margin-top:10px;">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZ04vwUHNWAFdf5Z7u46lSbafc1iv-mqJ-BD_pnK7fV7fS2A/viewform" target="_blank" rel="noopener" style="color:#7C3AED;text-decoration:none;font-weight:600;font-size:12px;"><span class="ico" data-ico="message"></span> Send feedback →</a>
     </div>
@@ -1422,6 +1428,11 @@ body{
         </div>
       </div>
 
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label>Company<input type="text" id="brief-hp" tabindex="-1" autocomplete="off"></label></div>
+      <label class="consent-row" style="display:flex;gap:8px;align-items:flex-start;margin:2px 0 14px;font-size:12px;line-height:1.5;color:var(--muted);cursor:pointer">
+        <input type="checkbox" id="brief-consent" style="margin-top:2px;flex:none;accent-color:var(--purple)">
+        <span>I agree verbAfrica may use these details to find matches and respond to my brief, per the <a href="#privacy" onclick="openPrivacy(event)" style="color:var(--purple-l)">privacy notice</a>.</span>
+      </label>
       <button class="brief-submit" onclick="submitBrief()">Find Matched Creatives →</button>
     </div>
 
@@ -1474,6 +1485,11 @@ body{
           placeholder="A little about you and how you'd like to get involved. Your craft, your brand, links to your work, anything that helps us get to know you."></textarea>
       </div>
 
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label>Company<input type="text" id="gi-hp" tabindex="-1" autocomplete="off"></label></div>
+      <label class="consent-row" style="display:flex;gap:8px;align-items:flex-start;margin:2px 0 14px;font-size:12px;line-height:1.5;color:var(--muted);cursor:pointer">
+        <input type="checkbox" id="gi-consent" style="margin-top:2px;flex:none;accent-color:var(--purple)">
+        <span>I agree verbAfrica may use these details to respond to me, per the <a href="#privacy" onclick="openPrivacy(event)" style="color:var(--purple-l)">privacy notice</a>.</span>
+      </label>
       <button class="brief-submit" onclick="submitGetInvolved()">Send →</button>
     </div>
   </div>
@@ -1787,6 +1803,24 @@ body{
 <!-- TOAST -->
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+<!-- PRIVACY NOTICE (POPIA). Plain-language summary — informational, not legal advice. -->
+<div id="privacyOverlay" onclick="if(event.target===this)closePrivacy()" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.72);padding:24px;overflow:auto">
+  <div role="dialog" aria-modal="true" aria-label="Privacy notice" style="max-width:640px;margin:32px auto;background:var(--card);border:1px solid var(--border-hi);border-radius:var(--radius);padding:28px 26px;color:var(--text);font-size:14px;line-height:1.65">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;gap:16px">
+      <h2 style="font-family:var(--font-head);font-size:20px;margin:0">Privacy notice</h2>
+      <button onclick="closePrivacy()" aria-label="Close privacy notice" style="background:none;border:none;color:var(--muted);font-size:26px;cursor:pointer;line-height:1">&times;</button>
+    </div>
+    <p style="margin:0 0 14px;color:var(--muted)">How verbAfrica handles the information you submit through this site. This is a plain-language summary, not legal advice.</p>
+    <p style="margin:0 0 6px"><strong>Who we are.</strong> verbAfrica is a curated South African creative booking directory. For any privacy request, contact <a href="mailto:alexander@verbafrica.co.za" style="color:var(--purple-l)">alexander@verbafrica.co.za</a>.</p>
+    <p style="margin:0 0 6px"><strong>What we collect.</strong> Only what you type into the enquiry, brief or get-involved forms — your name, your contact detail (email and/or phone) and your message. We don't use tracking cookies or analytics. A shortlist you build stays only in your own browser.</p>
+    <p style="margin:0 0 6px"><strong>Why.</strong> To respond to your enquiry, match you with creatives and run the booking service. We rely on the consent you give by ticking the box.</p>
+    <p style="margin:0 0 6px"><strong>Where it goes.</strong> Submissions are stored in a private Google Sheet and emailed to us so we can act on them. The site is hosted on GitHub Pages. These providers (Google, GitHub) may process and store data on servers outside South Africa, so submitting involves a cross-border transfer you consent to.</p>
+    <p style="margin:0 0 6px"><strong>How long.</strong> We keep enquiry records only as long as needed to provide the service and for reasonable business records, then delete them.</p>
+    <p style="margin:0 0 6px"><strong>Your rights.</strong> You can ask us to access, correct or delete your information, or withdraw your consent, at any time by emailing <a href="mailto:alexander@verbafrica.co.za" style="color:var(--purple-l)">alexander@verbafrica.co.za</a>.</p>
+    <p style="font-size:12px;color:var(--muted2);margin:16px 0 0">Last updated 8 October 2026.</p>
+  </div>
+</div>
+
 <!-- ══════════ SCRIPTS ══════════ -->
 <script>
 /* ─── CONFIG ───────────────────────────────────────── */
@@ -1797,6 +1831,26 @@ window.VA_CONFIG = {
   CONTACT_FALLBACK: 'alexander@verbafrica.co.za'  // shown if endpoint fails
 };
 
+/* ─── ESCAPING / SANITISING HELPERS ─────────────────── */
+/* Escape text before it goes into innerHTML. Data is curated in creatives.json, so this is
+   defence-in-depth: it keeps a stray &, <, > or quote from breaking markup or injecting nodes. */
+function escapeHtml(v){
+  return String(v == null ? '' : v)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+/* Cap a string length client-side (the Apps Script caps again server-side). */
+function clampStr(v, n){ const s = String(v == null ? '' : v); return s.length > n ? s.slice(0, n) : s; }
+/* Apply sane caps to every string field in a form payload before it leaves the browser. */
+function clampPayload(p){
+  const caps = { clientName:120, name:120, clientContact:200, contact:200, eventDate:60,
+    eventLocation:200, message:4000, description:4000, projectType:80, role:80, type:40,
+    budget:60, suggestedMatches:500, creativeName:160, creativeRole:120, sourceUrl:500 };
+  const out = {};
+  for(const k in p){ out[k] = (typeof p[k] === 'string') ? clampStr(p[k], caps[k] || 4000) : p[k]; }
+  return out;
+}
+
 /* ─── FORM → SHEET HELPER ──────────────────────────── */
 async function submitToSheet(payload){
   const url = window.VA_CONFIG?.FORM_ENDPOINT;
@@ -1804,6 +1858,7 @@ async function submitToSheet(payload){
     console.warn('[verbAfrica] FORM_ENDPOINT not configured. Payload:', payload);
     return { ok: false, reason: 'unconfigured' };
   }
+  payload = clampPayload(payload);
   try {
     /* Google Apps Script requires no-cors mode + text/plain to avoid a CORS preflight.
        The response is opaque (we can't read it), so we trust the request reached the server. */
@@ -1945,6 +2000,8 @@ function showToast(msg, type=''){
   const t = $('toast'); t.textContent = msg; t.className = 'toast show'+(type?' '+type:'');
   setTimeout(()=>{ t.className='toast'; }, 2400);
 }
+function openPrivacy(e){ if(e&&e.preventDefault) e.preventDefault(); const o=$('privacyOverlay'); if(o){ o.style.display='block'; document.body.style.overflow='hidden'; } }
+function closePrivacy(){ const o=$('privacyOverlay'); if(o){ o.style.display='none'; document.body.style.overflow=''; } }
 function saveShortlist(){ localStorage.setItem('va_shortlist', JSON.stringify(state.shortlist)); }
 
 /* ─── BUDGET MATCHING ───────────────────────────────── */
@@ -2360,6 +2417,11 @@ function showProfile(id){
             <label class="form-label" for="eq-message">Message</label>
             <textarea class="form-textarea" id="eq-message" placeholder="Describe your project, date, venue, requirements…"></textarea>
           </div>
+          <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><label>Company<input type="text" id="eq-hp" tabindex="-1" autocomplete="off"></label></div>
+          <label class="consent-row" style="display:flex;gap:8px;align-items:flex-start;margin:2px 0 12px;font-size:12px;line-height:1.5;color:var(--muted);cursor:pointer">
+            <input type="checkbox" id="eq-consent" style="margin-top:2px;flex:none;accent-color:var(--purple)">
+            <span>I agree verbAfrica may use these details to respond to my enquiry, per the <a href="#privacy" onclick="openPrivacy(event)" style="color:var(--purple-l)">privacy notice</a>.</span>
+          </label>
           <button class="form-submit" onclick="sendEnquiry(${id})">${isPriced(c)?'Send Booking Request →':'Request Quote →'}</button>
         </div>
       </div>
@@ -2408,6 +2470,9 @@ function addToCompareFromDetail(id){
 async function sendEnquiry(id){
   const n = $('eq-name')?.value; const c = $('eq-contact')?.value; const m = $('eq-message')?.value;
   if(!n||!c||!m){ showToast('Please fill in all fields'); return; }
+  /* Honeypot: a bot filled the hidden field — fake success, send nothing. */
+  if($('eq-hp')?.value){ showToast('Enquiry sent!','success'); $('enquirySection').style.display='none'; return; }
+  if(!$('eq-consent')?.checked){ showToast('Please tick the consent box to continue'); return; }
   const creative = creatives.find(x=>x.id===id);
   if(!creative){ showToast('Something went wrong, please refresh'); return; }
 
@@ -2425,6 +2490,9 @@ async function sendEnquiry(id){
     clientName: n,
     clientContact: c,
     message: m,
+    consent: true,
+    consentText: 'Enquiry consent — may use details to respond, per privacy notice',
+    _hp: '',
     sourceUrl: window.location.href,
     submittedAt: new Date().toISOString()
   });
@@ -2436,6 +2504,7 @@ async function sendEnquiry(id){
     $('enquirySection').style.display='none';
     /* Clear the form for the next use. */
     ['eq-name','eq-contact','eq-message'].forEach(id => { const el = $(id); if(el) el.value = ''; });
+    const ec = $('eq-consent'); if(ec) ec.checked = false;
   } else if(result.reason === 'unconfigured'){
     /* Forms not yet wired, fall back to telling the user to email directly. */
     showToast(`Form not yet live, please email ${window.VA_CONFIG.CONTACT_FALLBACK}`);
@@ -2495,6 +2564,8 @@ async function submitBrief(){
   const contact = $('briefContact').value;
   if(!type){ showToast('Please select a project type'); return; }
   if(!name||!contact){ showToast('Please add your name and contact'); return; }
+  if($('brief-hp')?.value){ showToast('Brief submitted!','success'); matchBrief(); return; }  // honeypot
+  if(!$('brief-consent')?.checked){ showToast('Please tick the consent box to continue'); return; }
 
   /* Show matches immediately, submission to the sheet runs in parallel. */
   matchBrief();
@@ -2513,6 +2584,9 @@ async function submitBrief(){
     suggestedMatches: matchedNames,
     clientName: name,
     clientContact: contact,
+    consent: true,
+    consentText: 'Brief consent — may use details to match & respond, per privacy notice',
+    _hp: '',
     sourceUrl: window.location.href,
     submittedAt: new Date().toISOString()
   });
@@ -2537,6 +2611,8 @@ async function submitGetInvolved(){
   const contact = $('giContact').value.trim();
   const message = $('giMessage').value.trim();
   if(!name || !contact){ showToast('Please add your name and contact'); return; }
+  if($('gi-hp')?.value){ showToast("Thanks, got it!",'success'); return; }  // honeypot
+  if(!$('gi-consent')?.checked){ showToast('Please tick the consent box to continue'); return; }
 
   const btn = document.querySelector('#page-getinvolved .brief-submit');
   const originalText = btn?.textContent;
@@ -2548,6 +2624,9 @@ async function submitGetInvolved(){
     name: name,
     contact: contact,
     message: message,
+    consent: true,
+    consentText: 'Get-involved consent — may use details to respond, per privacy notice',
+    _hp: '',
     sourceUrl: window.location.href,
     submittedAt: new Date().toISOString()
   });
@@ -2557,6 +2636,7 @@ async function submitGetInvolved(){
   if(result.ok){
     showToast("Thanks, got it! We'll be in touch personally", 'success');
     $('giRole').value=''; $('giName').value=''; $('giContact').value=''; $('giMessage').value='';
+    const gc = $('gi-consent'); if(gc) gc.checked = false;
   } else if(result.reason === 'unconfigured'){
     showToast(`Form not yet live, please email ${window.VA_CONFIG.CONTACT_FALLBACK}`);
   } else {
@@ -2566,7 +2646,7 @@ async function submitGetInvolved(){
 
 /* ─── KEYBOARD ────────────────────────────────────────── */
 document.addEventListener('keydown', e=>{
-  if(e.key==='Escape'){ closeDetailDirect(); closeCompareModal(); closeMobileMenus(); }
+  if(e.key==='Escape'){ closeDetailDirect(); closeCompareModal(); closeMobileMenus(); closePrivacy(); }
 });
 
 /* ─── MOBILE MENU ────────────────────────────────────── */
