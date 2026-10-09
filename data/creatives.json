@@ -711,7 +711,9 @@
         "price": "POA"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@gvnt__"
+    },
     "verified": true
   },
   {
@@ -764,7 +766,9 @@
         "price": "POA"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@wav.impact"
+    },
     "verified": true
   },
   {
@@ -805,7 +809,9 @@
         "price": "from R12,000"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@blue_pappi"
+    },
     "verified": true
   },
   {
@@ -842,7 +848,9 @@
         "price": "from R4,000"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@kallo_music"
+    },
     "verified": true
   },
   {
@@ -886,7 +894,9 @@
         "price": "from R12,000"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@lulaodiba"
+    },
     "verified": true
   },
   {
@@ -925,7 +935,9 @@
         "price": "from R3,000"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@thami_lami"
+    },
     "verified": true
   },
   {
@@ -969,7 +981,9 @@
         "price": "POA"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@djloopac"
+    },
     "verified": true
   },
   {
@@ -1055,7 +1069,9 @@
         "price": "POA"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@nash.ftl"
+    },
     "verified": true
   },
   {
@@ -1093,7 +1109,9 @@
         "price": "from R4,000"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@99juta"
+    },
     "verified": true
   },
   {
@@ -1169,7 +1187,9 @@
         "price": "from R4,500"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@spontaneous_dj"
+    },
     "verified": true
   },
   {
@@ -1216,7 +1236,9 @@
         "price": "POA"
       }
     ],
-    "contact": {},
+    "contact": {
+      "instagram": "@____philile____"
+    },
     "verified": true
   }
 ]
